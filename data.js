@@ -52,18 +52,6 @@ const subjects = [
                         link: "https://forms.cloud.microsoft/r/eeqnr2GcXn"
                     }
                 ]
-            },
-            {
-                name: "Quizzes",
-                icon: "✅",
-                description: "PHP quiz links.",
-                items: [
-                    {
-                        title: "PHP Quiz 1",
-                        description: "Syntax and variables.",
-                        link: "https://forms.gle/PASTE_LINK_HERE"
-                    }
-                ]
             }
         ]
     },
