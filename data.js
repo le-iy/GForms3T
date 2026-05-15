@@ -1,7 +1,7 @@
 const subjects = [
     {
         name: "GED0031",
-        icon: "📚",
+        icon: "📚🗣",
         description: "Purposive Communincation",
         categories: [
             {
@@ -33,7 +33,7 @@ const subjects = [
 
     {
         name: "CCS0043",
-        icon: "💻",
+        icon: "🌐💻",
         description: "Application Development",
         categories: [
             {
@@ -104,7 +104,7 @@ const subjects = [
 
     {
         name: "IT0203",
-        icon: "💻",
+        icon: "🔎💻",
         description: "Digital Forensics",
         categories: [
             {
@@ -124,7 +124,7 @@ const subjects = [
 
     {
         name: "IT0202",
-        icon: "💻",
+        icon: "🕶️💻",
         description: "Ethical Hacking",
         categories: [
             {
