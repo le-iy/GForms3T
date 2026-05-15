@@ -123,26 +123,6 @@ const subjects = [
     },
 
     {
-        name: "IT0203",
-        icon: "💻",
-        description: "Digital Forensics",
-        categories: [
-            {
-                name: "Formatives",
-                icon: "📝",
-                description: "Canvas-based: Formative assessments.",
-                items: [
-                    {
-                        title: "Formative 1",
-                        description: "Introduction to PHP.",
-                        link: "https://forms.cloud.microsoft/r/zhCKdRy5Va"
-                    }
-                ]
-            }
-        ]
-    },
-
-    {
         name: "IT0202",
         icon: "💻",
         description: "Ethical Hacking",
