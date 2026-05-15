@@ -149,7 +149,7 @@ const subjects = [
         categories: [
             {
                 name: "Netacad",
-                icon: "📝",
+                icon: "💡",
                 description: "Netacad Practical and Summary Quizzes",
                 items: [
                     {
