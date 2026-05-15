@@ -32,9 +32,9 @@ const subjects = [
     },
 
     {
-        name: "PHP",
+        name: "CCS0043",
         icon: "💻",
-        description: "PHP syntax, forms, POST, and basic web activities.",
+        description: "Application Development",
         categories: [
             {
                 name: "Formatives",
@@ -42,9 +42,14 @@ const subjects = [
                 description: "PHP formative activities.",
                 items: [
                     {
-                        title: "PHP Formative 1",
-                        description: "Basic PHP concepts.",
-                        link: "https://forms.gle/PASTE_LINK_HERE"
+                        title: "Formative 1",
+                        description: "Introduction to PHP.",
+                        link: "https://forms.cloud.microsoft/r/3ZBqx1cPsZ"
+                    },
+                    {
+                        title: "Formative 2",
+                        description: "Control Structures.",
+                        link: "https://forms.cloud.microsoft/r/eeqnr2GcXn"
                     }
                 ]
             },
