@@ -68,7 +68,7 @@ const subjects = [
                 items: [
                     {
                         title: "Formative 1",
-                        description: "Introduction to PHP.",
+                        description: "...",
                         link: "https://forms.cloud.microsoft/r/xSTHYiVjV0"
                     }
                 ]
@@ -81,7 +81,7 @@ const subjects = [
                 items: [
                     {
                         title: "Short Quiz 1",
-                        description: "Introduction to PHP.",
+                        description: "...",
                         link: "https://forms.cloud.microsoft/r/ffz0iNdSj0"
                     }
                 ]
@@ -94,7 +94,7 @@ const subjects = [
                 items: [
                     {
                         title: "Short Quiz 1",
-                        description: "Introduction to PHP.",
+                        description: "...",
                         link: "https://forms.cloud.microsoft/r/q1p4Bw8cG3"
                     }
                 ]
