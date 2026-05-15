@@ -166,6 +166,168 @@ body[data-theme="forest"] {
     --shadow-soft: rgba(52, 28, 2, 0.22);
 }
 
+/* LUXURY */
+body[data-theme="luxury"] {
+    --bg-1: #030303;
+    --bg-2: #1b1b1b;
+    --bg-glow-1: rgba(255, 219, 137, 0.20);
+    --bg-glow-2: rgba(44, 44, 46, 0.45);
+
+    --panel: rgba(255, 219, 137, 0.94);
+    --panel-2: rgba(244, 213, 143, 0.86);
+    --card: #2c2c2e;
+    --card-glow: rgba(255, 219, 137, 0.12);
+
+    --text: #ffdb89;
+    --muted: #f1cc7b;
+    --eyebrow: #030303;
+
+    --accent-1: #ffdb89;
+    --accent-2: #2c2c2e;
+    --accent-3: #030303;
+
+    --border: rgba(255, 219, 137, 0.45);
+    --card-border: rgba(255, 219, 137, 0.28);
+
+    --shadow: rgba(3, 3, 3, 0.55);
+    --shadow-soft: rgba(3, 3, 3, 0.30);
+}
+
+/* RETRO */
+body[data-theme="retro"] {
+    --bg-1: #151515;
+    --bg-2: #2b2f38;
+    --bg-glow-1: rgba(75, 96, 127, 0.32);
+    --bg-glow-2: rgba(243, 112, 30, 0.28);
+
+    --panel: rgba(232, 216, 201, 0.96);
+    --panel-2: rgba(198, 189, 181, 0.88);
+    --card: #e8d8c9;
+    --card-glow: rgba(243, 112, 30, 0.12);
+
+    --text: #151515;
+    --muted: #4b607f;
+    --eyebrow: #f3701e;
+
+    --accent-1: #e8d8c9;
+    --accent-2: #4b607f;
+    --accent-3: #f3701e;
+
+    --border: rgba(75, 96, 127, 0.38);
+    --card-border: rgba(21, 21, 21, 0.20);
+
+    --shadow: rgba(21, 21, 21, 0.48);
+    --shadow-soft: rgba(21, 21, 21, 0.24);
+}
+
+/* POP */
+body[data-theme="pop"] {
+    --bg-1: #050505;
+    --bg-2: #36434a;
+    --bg-glow-1: rgba(255, 71, 119, 0.35);
+    --bg-glow-2: rgba(229, 212, 200, 0.20);
+
+    --panel: rgba(229, 212, 200, 0.96);
+    --panel-2: rgba(255, 71, 119, 0.28);
+    --card: #e5d4c8;
+    --card-glow: rgba(255, 71, 119, 0.14);
+
+    --text: #36434a;
+    --muted: #4b5c64;
+    --eyebrow: #ff4777;
+
+    --accent-1: #ff4777;
+    --accent-2: #36434a;
+    --accent-3: #050505;
+
+    --border: rgba(255, 71, 119, 0.42);
+    --card-border: rgba(54, 67, 74, 0.24);
+
+    --shadow: rgba(5, 5, 5, 0.50);
+    --shadow-soft: rgba(5, 5, 5, 0.25);
+}
+
+/* LOTUS */
+body[data-theme="lotus"] {
+    --bg-1: #0a3323;
+    --bg-2: #105666;
+    --bg-glow-1: rgba(211, 150, 140, 0.28);
+    --bg-glow-2: rgba(131, 153, 88, 0.34);
+
+    --panel: rgba(247, 244, 213, 0.96);
+    --panel-2: rgba(211, 150, 140, 0.38);
+    --card: #f7f4d5;
+    --card-glow: rgba(131, 153, 88, 0.14);
+
+    --text: #0a3323;
+    --muted: #105666;
+    --eyebrow: #839958;
+
+    --accent-1: #839958;
+    --accent-2: #d3968c;
+    --accent-3: #105666;
+
+    --border: rgba(131, 153, 88, 0.42);
+    --card-border: rgba(10, 51, 35, 0.22);
+
+    --shadow: rgba(10, 51, 35, 0.50);
+    --shadow-soft: rgba(10, 51, 35, 0.25);
+}
+
+/* GOTHIC */
+body[data-theme="gothic"] {
+    --bg-1: #0a0a0a;
+    --bg-2: #371e1e;
+    --bg-glow-1: rgba(183, 180, 174, 0.14);
+    --bg-glow-2: rgba(55, 30, 30, 0.50);
+
+    --panel: rgba(183, 180, 174, 0.94);
+    --panel-2: rgba(114, 110, 104, 0.78);
+    --card: #33312f;
+    --card-glow: rgba(183, 180, 174, 0.10);
+
+    --text: #e8e2da;
+    --muted: #c9c3bc;
+    --eyebrow: #371e1e;
+
+    --accent-1: #b7b4ae;
+    --accent-2: #726e68;
+    --accent-3: #371e1e;
+
+    --border: rgba(183, 180, 174, 0.34);
+    --card-border: rgba(183, 180, 174, 0.22);
+
+    --shadow: rgba(10, 10, 10, 0.58);
+    --shadow-soft: rgba(10, 10, 10, 0.32);
+}
+
+/* DEPTHS */
+body[data-theme="depths"] {
+    --bg-1: #0c114a;
+    --bg-2: #10165c;
+    --bg-glow-1: rgba(181, 160, 34, 0.28);
+    --bg-glow-2: rgba(109, 107, 118, 0.24);
+
+    --panel: rgba(179, 178, 176, 0.96);
+    --panel-2: rgba(109, 107, 118, 0.72);
+    --card: #f0efea;
+    --card-glow: rgba(181, 160, 34, 0.12);
+
+    --text: #0c114a;
+    --muted: #4e4d5a;
+    --eyebrow: #806a10;
+
+    --accent-1: #b5a022;
+    --accent-2: #806a10;
+    --accent-3: #0c114a;
+
+    --border: rgba(181, 160, 34, 0.42);
+    --card-border: rgba(12, 17, 74, 0.22);
+
+    --shadow: rgba(12, 17, 74, 0.52);
+    --shadow-soft: rgba(12, 17, 74, 0.25);
+}
+
 body {
     font-family: Arial, sans-serif;
     background:
@@ -359,6 +521,15 @@ h1 {
     font-size: 13px;
     color: var(--eyebrow);
     font-weight: bold;
+}
+
+body[data-theme="luxury"] .card h2,
+body[data-theme="luxury"] .card p,
+body[data-theme="luxury"] .card-footer,
+body[data-theme="gothic"] .card h2,
+body[data-theme="gothic"] .card p,
+body[data-theme="gothic"] .card-footer {
+    color: var(--text);
 }
 
 .link-card {
