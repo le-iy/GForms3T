@@ -2,9 +2,33 @@ const cardContainer = document.getElementById("cardContainer");
 const breadcrumb = document.getElementById("breadcrumb");
 const backBtn = document.getElementById("backBtn");
 
+const themeButtons = document.querySelectorAll(".theme-btn");
+const savedTheme = localStorage.getItem("formsDashboardTheme") || "ember";
+
 let currentView = "home";
 let selectedSubject = null;
 let selectedCategory = null;
+
+function applyTheme(themeName) {
+    document.body.setAttribute("data-theme", themeName);
+    localStorage.setItem("formsDashboardTheme", themeName);
+
+    themeButtons.forEach(button => {
+        if (button.dataset.theme === themeName) {
+            button.classList.add("active");
+        } else {
+            button.classList.remove("active");
+        }
+    });
+}
+
+themeButtons.forEach(button => {
+    button.addEventListener("click", function() {
+        applyTheme(button.dataset.theme);
+    });
+});
+
+applyTheme(savedTheme);
 
 function renderHome() {
     currentView = "home";
@@ -80,7 +104,7 @@ function renderCategory(subject, category) {
             icon: "🔗",
             title: item.title,
             description: item.description,
-            footer: "Open Google Form"
+            footer: "Open Form"
         });
 
         card.classList.add("link-card");
