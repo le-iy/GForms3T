@@ -1,59 +1,30 @@
 const subjects = [
     {
-        name: "Physics",
-        icon: "⚛️",
-        description: "Vectors, motion, force, and lab activities.",
+        name: "GED0031",
+        icon: "📚",
+        description: "Purposive Communincation",
         categories: [
             {
                 name: "Formatives",
                 icon: "📝",
-                description: "Practice forms and formative assessments.",
+                description: "Canvas-based: Formative assessments.",
                 items: [
                     {
                         title: "Formative 1",
                         description: "Module 1 formative quiz.",
-                        link: "https://forms.gle/PASTE_LINK_HERE"
-                    },
-                    {
-                        title: "Formative 2",
-                        description: "Module 2 formative quiz.",
-                        link: "https://forms.gle/PASTE_LINK_HERE"
+                        link: "https://forms.cloud.microsoft/r/zsvLhD2qfx"
                     }
                 ]
             },
             {
-                name: "Summatives",
+                name: "Practice Quizzes",
                 icon: "📚",
-                description: "Major graded assessments.",
+                description: "Module-generated Quizzes.",
                 items: [
                     {
-                        title: "Summative 1",
-                        description: "First summative assessment.",
-                        link: "https://forms.gle/PASTE_LINK_HERE"
-                    }
-                ]
-            },
-            {
-                name: "Short Quiz",
-                icon: "⚡",
-                description: "Short quizzes per lesson.",
-                items: [
-                    {
-                        title: "Short Quiz 1",
-                        description: "Short quiz for early topics.",
-                        link: "https://forms.gle/PASTE_LINK_HERE"
-                    }
-                ]
-            },
-            {
-                name: "Long Quiz",
-                icon: "🧠",
-                description: "Long quizzes and exam-type forms.",
-                items: [
-                    {
-                        title: "Long Quiz 1",
-                        description: "Long quiz coverage.",
-                        link: "https://forms.gle/PASTE_LINK_HERE"
+                        title: "Quiz 1 Prep",
+                        description: "Module-based generated Q1 prep.",
+                        link: "https://forms.cloud.microsoft/r/sFBma6TMCW"
                     }
                 ]
             }
