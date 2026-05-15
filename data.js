@@ -114,7 +114,7 @@ const subjects = [
                 items: [
                     {
                         title: "Formative 1",
-                        description: "Introduction to PHP.",
+                        description: "...",
                         link: "https://forms.cloud.microsoft/r/zhCKdRy5Va"
                     }
                 ]
@@ -152,7 +152,7 @@ const subjects = [
                 items: [
                     {
                         title: "Formative 1",
-                        description: "Introduction to PHP.",
+                        description: "...",
                         link: "https://forms.cloud.microsoft/r/myUu9q7Fxy"
                     }
                 ]
