@@ -2,7 +2,7 @@ const cardContainer = document.getElementById("cardContainer");
 const breadcrumb = document.getElementById("breadcrumb");
 const backBtn = document.getElementById("backBtn");
 
-const themeButtons = document.querySelectorAll(".theme-btn");
+const themeSelect = document.getElementById("themeSelect");
 const savedTheme = localStorage.getItem("formsDashboardTheme") || "ember";
 
 let currentView = "home";
@@ -13,20 +13,16 @@ function applyTheme(themeName) {
     document.body.setAttribute("data-theme", themeName);
     localStorage.setItem("formsDashboardTheme", themeName);
 
-    themeButtons.forEach(button => {
-        if (button.dataset.theme === themeName) {
-            button.classList.add("active");
-        } else {
-            button.classList.remove("active");
-        }
-    });
+    if (themeSelect) {
+        themeSelect.value = themeName;
+    }
 }
 
-themeButtons.forEach(button => {
-    button.addEventListener("click", function() {
-        applyTheme(button.dataset.theme);
+if (themeSelect) {
+    themeSelect.addEventListener("change", function() {
+        applyTheme(themeSelect.value);
     });
-});
+}
 
 applyTheme(savedTheme);
 
