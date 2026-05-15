@@ -169,28 +169,28 @@ body[data-theme="forest"] {
 /* LUXURY */
 body[data-theme="luxury"] {
     --bg-1: #030303;
-    --bg-2: #1b1b1b;
-    --bg-glow-1: rgba(255, 219, 137, 0.20);
-    --bg-glow-2: rgba(44, 44, 46, 0.45);
+    --bg-2: #1a1712;
+    --bg-glow-1: rgba(255, 219, 137, 0.18);
+    --bg-glow-2: rgba(255, 219, 137, 0.08);
 
-    --panel: rgba(255, 219, 137, 0.94);
-    --panel-2: rgba(244, 213, 143, 0.86);
+    --panel: rgba(23, 23, 21, 0.96);
+    --panel-2: rgba(44, 44, 46, 0.92);
     --card: #2c2c2e;
-    --card-glow: rgba(255, 219, 137, 0.12);
+    --card-glow: rgba(255, 219, 137, 0.08);
 
     --text: #ffdb89;
-    --muted: #f1cc7b;
-    --eyebrow: #030303;
+    --muted: #d8bd7a;
+    --eyebrow: #ffdb89;
 
     --accent-1: #ffdb89;
-    --accent-2: #2c2c2e;
+    --accent-2: #b8954f;
     --accent-3: #030303;
 
-    --border: rgba(255, 219, 137, 0.45);
-    --card-border: rgba(255, 219, 137, 0.28);
+    --border: rgba(255, 219, 137, 0.30);
+    --card-border: rgba(255, 219, 137, 0.25);
 
-    --shadow: rgba(3, 3, 3, 0.55);
-    --shadow-soft: rgba(3, 3, 3, 0.30);
+    --shadow: rgba(0, 0, 0, 0.60);
+    --shadow-soft: rgba(0, 0, 0, 0.35);
 }
 
 /* RETRO */
