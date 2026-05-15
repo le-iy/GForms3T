@@ -218,11 +218,11 @@ h1 {
 }
 
 .theme-panel {
-    min-width: 260px;
+    min-width: 180px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 10px;
+    gap: 8px;
 }
 
 .theme-label {
@@ -233,69 +233,29 @@ h1 {
     letter-spacing: 1px;
 }
 
-.theme-buttons {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.theme-btn {
+.theme-select {
     border: 1px solid var(--border);
-    background: rgba(255, 255, 255, 0.45);
+    background: rgba(255, 255, 255, 0.58);
     color: var(--text);
-    padding: 8px 11px;
+    padding: 10px 14px;
     border-radius: 999px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 7px;
+    outline: none;
+    min-width: 155px;
+    box-shadow: 0 8px 18px var(--shadow-soft);
     transition: 0.2s ease;
 }
 
-.theme-btn:hover {
+.theme-select:hover {
     transform: translateY(-2px);
     border-color: var(--accent-3);
 }
 
-.theme-btn.active {
-    background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
-    border-color: var(--accent-3);
-    color: var(--text);
-}
-
-.theme-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    display: inline-block;
-    border: 1px solid rgba(0, 0, 0, 0.18);
-}
-
-.ocean-dot {
-    background: linear-gradient(135deg, #f4efee, #49747f, #e34b26);
-}
-
-.violet-dot {
-    background: linear-gradient(135deg, #faf9f8, #aaaaff, #531745);
-}
-
-.sunset-dot {
-    background: linear-gradient(135deg, #ffbb94, #dc586d, #4c1d3d);
-}
-
-.dusk-dot {
-    background: linear-gradient(135deg, #5196ce, #fe8492, #231620);
-}
-
-.ember-dot {
-    background: linear-gradient(135deg, #ff9408, #ca3f16, #95122c);
-}
-
-.forest-dot {
-    background: linear-gradient(135deg, #f6f4ec, #efc87d, #4f531f);
+.theme-select:focus {
+    border-color: var(--accent-2);
+    box-shadow: 0 0 0 3px var(--card-glow);
 }
 
 .main-card {
@@ -430,10 +390,6 @@ h1 {
         align-items: flex-start;
         min-width: 100%;
     }
-
-    .theme-buttons {
-        justify-content: flex-start;
-    }
 }
 
 @media (max-width: 600px) {
@@ -452,5 +408,9 @@ h1 {
 
     .card-grid {
         grid-template-columns: 1fr;
+    }
+
+    .theme-select {
+        width: 100%;
     }
 }
