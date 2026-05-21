@@ -2,7 +2,7 @@ const subjects = [
     {
         name: "GED0031",
         icon: "📚🗣",
-        description: "Purposive Communincation",
+        description: "Purposive Communication",
         categories: [
             {
                 name: "Formatives",
@@ -19,7 +19,7 @@ const subjects = [
             {
                 name: "Practice Quizzes",
                 icon: "📚",
-                description: "Module-generated Quizzes.",
+                description: "Module-generated quizzes.",
                 items: [
                     {
                         title: "Quiz 1 Prep",
@@ -64,11 +64,11 @@ const subjects = [
             {
                 name: "LEC: Formatives",
                 icon: "📝",
-                description: "Hell.",
+                description: "Lecture formative assessments.",
                 items: [
                     {
                         title: "Formative 1",
-                        description: "...",
+                        description: "Lecture formative quiz.",
                         link: "https://forms.cloud.microsoft/r/xSTHYiVjV0"
                     }
                 ]
@@ -76,12 +76,12 @@ const subjects = [
 
             {
                 name: "LAB: Short Quizzes",
-                icon: "📝",
-                description: "Canvas-based Short Quizzes.",
+                icon: "🧪",
+                description: "Canvas-based short quizzes.",
                 items: [
                     {
                         title: "Short Quiz 1",
-                        description: "...",
+                        description: "Lab short quiz.",
                         link: "https://forms.cloud.microsoft/r/ffz0iNdSj0"
                     }
                 ]
@@ -89,12 +89,12 @@ const subjects = [
 
             {
                 name: "LEC: PRETEST",
-                icon: "📝",
-                description: "Eme ni sir.",
+                icon: "📌",
+                description: "Lecture pretest forms.",
                 items: [
                     {
-                        title: "Short Quiz 1",
-                        description: "...",
+                        title: "Pretest 1",
+                        description: "Lecture pretest.",
                         link: "https://forms.cloud.microsoft/r/q1p4Bw8cG3"
                     }
                 ]
@@ -102,19 +102,38 @@ const subjects = [
 
             {
                 name: "LAB: Module Activity Reviewers",
-                icon: "📝",
-                description: "Module Activity based Questions.",
+                icon: "🔬",
+                description: "Module activity-based questions.",
+
+                repositories: [
+                    {
+                        title: "Module 3 Source PDF",
+                        link: "sources/GED0081/module-3.pdf"
+                    },
+                    {
+                        title: "Module 4 Source PDF",
+                        link: "sources/GED0081/module-4.pdf"
+                    },
+                    {
+                        title: "Module 5 Source PDF",
+                        link: "sources/GED0081/module-5.pdf"
+                    }
+                ],
+
                 items: [
                     {
                         title: "Module 3",
+                        description: "Module 3 activity reviewer.",
                         link: "https://forms.cloud.microsoft/r/JKifvH7tCE"
                     },
                     {
                         title: "Module 4",
+                        description: "Module 4 activity reviewer.",
                         link: ""
                     },
                     {
                         title: "Module 5",
+                        description: "Module 5 activity reviewer.",
                         link: ""
                     }
                 ]
@@ -134,7 +153,7 @@ const subjects = [
                 items: [
                     {
                         title: "Formative 1",
-                        description: "...",
+                        description: "Digital Forensics formative quiz.",
                         link: "https://forms.cloud.microsoft/r/zhCKdRy5Va"
                     }
                 ]
@@ -150,7 +169,7 @@ const subjects = [
             {
                 name: "Netacad",
                 icon: "💡",
-                description: "Netacad Practical and Summary Quizzes",
+                description: "Netacad practical and summary quizzes.",
                 items: [
                     {
                         title: "Module 1",
@@ -172,7 +191,7 @@ const subjects = [
                 items: [
                     {
                         title: "Formative 1",
-                        description: "...",
+                        description: "Ethical Hacking formative quiz.",
                         link: "https://forms.cloud.microsoft/r/myUu9q7Fxy"
                     }
                 ]
