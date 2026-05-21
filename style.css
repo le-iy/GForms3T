@@ -681,3 +681,42 @@ body[data-theme="gothic"] .card-footer {
         min-width: 100%;
     }
 }
+
+
+
+
+
+.collab-btn {
+    margin-left: auto;
+    border: none;
+    background: linear-gradient(135deg, var(--accent-3), var(--accent-2));
+    color: white;
+    padding: 10px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 8px 18px var(--shadow-soft);
+    transition: 0.2s ease;
+}
+
+.collab-btn:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, var(--accent-2), var(--accent-1));
+    color: var(--text);
+}
+
+.disabled-card {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+.disabled-card:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+@media (max-width: 760px) {
+    .collab-btn {
+        margin-left: 0;
+    }
+}
