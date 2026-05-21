@@ -47,13 +47,13 @@ const subjects = [
                         title: "Formative 1",
                         description: "Introduction to PHP.",
                         link: "https://forms.cloud.microsoft/r/3ZBqx1cPsZ",
-                        collabLink: ""
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUMDZTM1ZLSVVRU0ZNS0g4R1FFOUVBQ0c2Ri4u&Token=3c79b1d657cb4600b0af30950240b487"
                     },
                     {
                         title: "Formative 2",
                         description: "Control Structures.",
                         link: "https://forms.cloud.microsoft/r/eeqnr2GcXn",
-                        collabLink: ""
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUMDZTM1ZLSVVRU0ZNS0g4R1FFOUVBQ0c2Ri4u&Token=3c79b1d657cb4600b0af30950240b487"
                     }
                 ]
             }
@@ -74,7 +74,7 @@ const subjects = [
                         title: "Formative 1",
                         description: "Lecture formative quiz.",
                         link: "https://forms.cloud.microsoft/r/xSTHYiVjV0",
-                        collabLink: ""
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUQ01EQkNQNjgxT1g5SkE1SE5ETDNIOU1QTy4u&Token=3ef439a4dcce4f06b52337c84014edd1"
                     }
                 ]
             },
@@ -88,7 +88,7 @@ const subjects = [
                         title: "Short Quiz 1",
                         description: "Lab short quiz.",
                         link: "https://forms.cloud.microsoft/r/ffz0iNdSj0",
-                        collabLink: ""
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUME1UV0JHUFU2MkNSTTVRMkVLM1VPM0VQNC4u&Token=2bdae6792ca645e4bd8a97c8265bb99b"
                     }
                 ]
             },
@@ -102,7 +102,7 @@ const subjects = [
                         title: "Pretest 1",
                         description: "Lecture pretest.",
                         link: "https://forms.cloud.microsoft/r/q1p4Bw8cG3",
-                        collabLink: ""
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUNU1ZREVaVTJOVDFGUjVPRkdBTDA4UzRFSC4u&Token=78ffa2287b5547ddb0cfcbff36e41247"
                     }
                 ]
             },
@@ -132,19 +132,19 @@ const subjects = [
                         title: "Module 3",
                         description: "Module 3 activity reviewer.",
                         link: "https://forms.cloud.microsoft/r/JKifvH7tCE",
-                        collabLink: ""
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUNURQTDg2N0dGOEVDU01VVzFIOVA4REdMMi4u&Token=165988a5cf3e4e3785825649b362b512"
                     },
                     {
                         title: "Module 4",
                         description: "Module 4 activity reviewer.",
                         link: "https://forms.cloud.microsoft/r/VveRqdGh45",
-                        collabLink: ""
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUNEgyQloyVkNFVlJPWlFFNzNRUjJJVllZSy4u&Token=8928765b897f45b1a885084102444c47"
                     },
                     {
                         title: "Module 5",
                         description: "Module 5 activity reviewer.",
                         link: "https://forms.cloud.microsoft/r/9VLqdT5PLQ",
-                        collabLink: ""
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxURDZQRU1aTVhSV0NMNU1NVTk0NFZUM0hQRC4u&Token=157a9bea50584eed94c3aab7ac3b6c09"
                     }
                 ]
             }
@@ -165,7 +165,7 @@ const subjects = [
                         title: "Formative 1",
                         description: "Digital Forensics formative quiz.",
                         link: "https://forms.cloud.microsoft/r/zhCKdRy5Va",
-                        collabLink: ""
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxURFZKRFJLQTVOQlpIM0VPQkdJTVY1TlhOSi4u&Token=3a62e81c999b4c2cad5313c787035b29"
                     }
                 ]
             }
@@ -186,13 +186,13 @@ const subjects = [
                         title: "Module 1",
                         description: "Introduction to Ethical Hacking and Penetration Testing.",
                         link: "https://forms.cloud.microsoft/r/76PxpVAPYR",
-                        collabLink: ""
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUMzdZUTVBTE1ESExIQ0o0N1c0RDhPRjNOVS4u&Token=d5a5665ab73e4955bb82e9d6ab85235d"
                     },
                     {
                         title: "Module 2",
                         description: "Planning and Scoping a Penetration Testing Assessment.",
                         link: "https://forms.cloud.microsoft/r/kKz4Z0TS74",
-                        collabLink: ""
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUN01ESTZMUVpYNjJMQzVMQlkxNU9aVzRQRS4u&Token=b4fa8a30865c4ba2928fb6d008612122"
                     }
                 ]
             },
@@ -206,7 +206,7 @@ const subjects = [
                         title: "Formative 1",
                         description: "Ethical Hacking formative quiz.",
                         link: "https://forms.cloud.microsoft/r/myUu9q7Fxy",
-                        collabLink: ""
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUNVpQRTc4S0dXOUpDR1M2T1dMVTNRTllTSy4u&Token=a39a7f3d4ec94424b05c8c45ae629443"
                     }
                 ]
             }
