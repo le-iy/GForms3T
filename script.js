@@ -1,6 +1,7 @@
 const cardContainer = document.getElementById("cardContainer");
 const breadcrumb = document.getElementById("breadcrumb");
 const backBtn = document.getElementById("backBtn");
+const collabBtn = document.getElementById("collabBtn");
 
 const themeSelect = document.getElementById("themeSelect");
 const savedTheme = localStorage.getItem("formsDashboardTheme") || "ember";
@@ -8,6 +9,7 @@ const savedTheme = localStorage.getItem("formsDashboardTheme") || "ember";
 let currentView = "home";
 let selectedSubject = null;
 let selectedCategory = null;
+let linkMode = "response";
 
 function applyTheme(themeName) {
     document.body.setAttribute("data-theme", themeName);
@@ -34,6 +36,26 @@ function removeRepositoryDropdown() {
     }
 }
 
+function resetLinkMode() {
+    linkMode = "response";
+
+    if (collabBtn) {
+        collabBtn.textContent = "Collab Links";
+    }
+}
+
+function hideCollabButton() {
+    if (collabBtn) {
+        collabBtn.classList.add("hidden");
+    }
+}
+
+function showCollabButton() {
+    if (collabBtn) {
+        collabBtn.classList.remove("hidden");
+    }
+}
+
 function renderRepositoryDropdown(category) {
     removeRepositoryDropdown();
 
@@ -46,7 +68,7 @@ function renderRepositoryDropdown(category) {
     repoBox.className = "repo-box";
 
     repoBox.innerHTML = `
-        <label for="repoSelect" class="repo-label">Repository</label>
+        <label for="repoSelect" class="repo-label">Sources</label>
 
         <select id="repoSelect" class="repo-select">
             <option value="">Choose source...</option>
@@ -71,6 +93,8 @@ function renderRepositoryDropdown(category) {
 
 function renderHome() {
     removeRepositoryDropdown();
+    hideCollabButton();
+    resetLinkMode();
 
     currentView = "home";
     selectedSubject = null;
@@ -100,8 +124,12 @@ function renderHome() {
 
 function renderSubject(subject) {
     removeRepositoryDropdown();
+    hideCollabButton();
+    resetLinkMode();
 
     currentView = "subject";
+    selectedSubject = subject;
+    selectedCategory = null;
 
     breadcrumb.textContent = `Home / ${subject.name}`;
     backBtn.classList.remove("hidden");
@@ -127,9 +155,12 @@ function renderSubject(subject) {
 
 function renderCategory(subject, category) {
     currentView = "category";
+    selectedSubject = subject;
+    selectedCategory = category;
 
     breadcrumb.textContent = `Home / ${subject.name} / ${category.name}`;
     backBtn.classList.remove("hidden");
+    showCollabButton();
 
     cardContainer.innerHTML = "";
 
@@ -145,13 +176,16 @@ function renderCategory(subject, category) {
     }
 
     category.items.forEach(item => {
-        const hasLink = item.link && item.link.trim() !== "";
+        const activeLink = linkMode === "collab" ? item.collabLink : item.link;
+        const hasLink = activeLink && activeLink.trim() !== "";
 
         const card = createCard({
-            icon: "🔗",
+            icon: linkMode === "collab" ? "🤝" : "🔗",
             title: item.title,
             description: item.description || "No description added.",
-            footer: hasLink ? "Open Form" : "Link not added yet"
+            footer: hasLink
+                ? (linkMode === "collab" ? "Open Collab Link" : "Open Form")
+                : (linkMode === "collab" ? "Collab link not added yet" : "Link not added yet")
         });
 
         card.classList.add("link-card");
@@ -162,7 +196,7 @@ function renderCategory(subject, category) {
 
         card.addEventListener("click", function() {
             if (hasLink) {
-                window.open(item.link, "_blank");
+                window.open(activeLink, "_blank");
             }
         });
 
@@ -184,6 +218,24 @@ function createCard({ icon, title, description, footer }) {
     `;
 
     return card;
+}
+
+if (collabBtn) {
+    collabBtn.addEventListener("click", function() {
+        if (!selectedSubject || !selectedCategory) {
+            return;
+        }
+
+        if (linkMode === "response") {
+            linkMode = "collab";
+            collabBtn.textContent = "Response Links";
+        } else {
+            linkMode = "response";
+            collabBtn.textContent = "Collab Links";
+        }
+
+        renderCategory(selectedSubject, selectedCategory);
+    });
 }
 
 backBtn.addEventListener("click", function() {
