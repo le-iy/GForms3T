@@ -26,7 +26,52 @@ if (themeSelect) {
 
 applyTheme(savedTheme);
 
+function removeRepositoryDropdown() {
+    const existingRepoBox = document.getElementById("repoBox");
+
+    if (existingRepoBox) {
+        existingRepoBox.remove();
+    }
+}
+
+function renderRepositoryDropdown(category) {
+    removeRepositoryDropdown();
+
+    if (!category.repositories || category.repositories.length === 0) {
+        return;
+    }
+
+    const repoBox = document.createElement("div");
+    repoBox.id = "repoBox";
+    repoBox.className = "repo-box";
+
+    repoBox.innerHTML = `
+        <label for="repoSelect" class="repo-label">Repository</label>
+
+        <select id="repoSelect" class="repo-select">
+            <option value="">Choose source...</option>
+            ${category.repositories.map(repo => `
+                <option value="${repo.link}">${repo.title}</option>
+            `).join("")}
+        </select>
+    `;
+
+    const navRow = document.querySelector(".nav-row");
+    navRow.appendChild(repoBox);
+
+    const repoSelect = document.getElementById("repoSelect");
+
+    repoSelect.addEventListener("change", function() {
+        if (repoSelect.value) {
+            window.open(repoSelect.value, "_blank");
+            repoSelect.value = "";
+        }
+    });
+}
+
 function renderHome() {
+    removeRepositoryDropdown();
+
     currentView = "home";
     selectedSubject = null;
     selectedCategory = null;
@@ -54,6 +99,8 @@ function renderHome() {
 }
 
 function renderSubject(subject) {
+    removeRepositoryDropdown();
+
     currentView = "subject";
 
     breadcrumb.textContent = `Home / ${subject.name}`;
@@ -86,7 +133,9 @@ function renderCategory(subject, category) {
 
     cardContainer.innerHTML = "";
 
-    if (category.items.length === 0) {
+    renderRepositoryDropdown(category);
+
+    if (!category.items || category.items.length === 0) {
         cardContainer.innerHTML = `
             <div class="empty-message">
                 No links added yet.
@@ -96,17 +145,25 @@ function renderCategory(subject, category) {
     }
 
     category.items.forEach(item => {
+        const hasLink = item.link && item.link.trim() !== "";
+
         const card = createCard({
             icon: "🔗",
             title: item.title,
-            description: item.description,
-            footer: "Open Form"
+            description: item.description || "No description added.",
+            footer: hasLink ? "Open Form" : "Link not added yet"
         });
 
         card.classList.add("link-card");
 
+        if (!hasLink) {
+            card.classList.add("disabled-card");
+        }
+
         card.addEventListener("click", function() {
-            window.open(item.link, "_blank");
+            if (hasLink) {
+                window.open(item.link, "_blank");
+            }
         });
 
         cardContainer.appendChild(card);
@@ -121,7 +178,7 @@ function createCard({ icon, title, description, footer }) {
         <div>
             <div class="card-icon">${icon}</div>
             <h2>${title}</h2>
-            <p>${description}</p>
+            <p>${description || "No description added."}</p>
         </div>
         <div class="card-footer">${footer}</div>
     `;
