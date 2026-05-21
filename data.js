@@ -193,6 +193,12 @@ const subjects = [
                         description: "Planning and Scoping a Penetration Testing Assessment.",
                         link: "https://forms.cloud.microsoft/r/kKz4Z0TS74",
                         collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUN01ESTZMUVpYNjJMQzVMQlkxNU9aVzRQRS4u&Token=b4fa8a30865c4ba2928fb6d008612122"
+                    },
+                    {
+                        title: "Module 3",
+                        description: "Planning and Scoping a Penetration Testing Assessment.",
+                        link: "https://forms.cloud.microsoft/r/D1MAdRCSVV",
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUMjBQR1o5NEsyUkZUWjFENllWUlc4WU5PRi4u&Token=8c8ffb2a02324a60b50051f86df74fe5"
                     }
                 ]
             },
