@@ -103,7 +103,7 @@ const subjects = [
             {
                 name: "LAB: Module Activity Reviewers",
                 icon: "🔬",
-                description: "Module activity-based questions.",
+                description: "Module activity-based practice questions.",
 
                 repositories: [
                     {
