@@ -585,3 +585,100 @@ body[data-theme="gothic"] .card-footer {
         width: 100%;
     }
 }
+
+
+
+
+
+
+.repo-box {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    border-radius: 999px;
+    box-shadow: 0 8px 18px var(--shadow-soft);
+}
+
+.repo-label {
+    color: var(--muted);
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.repo-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    border: 1px solid var(--border);
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.70), rgba(255, 255, 255, 0.35));
+    color: var(--text);
+
+    padding: 11px 42px 11px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+
+    min-width: 240px;
+    box-shadow: 0 8px 18px var(--shadow-soft);
+    transition: 0.2s ease;
+
+    background-image:
+        linear-gradient(45deg, transparent 50%, var(--text) 50%),
+        linear-gradient(135deg, var(--text) 50%, transparent 50%),
+        linear-gradient(135deg, rgba(255,255,255,0.70), rgba(255,255,255,0.35));
+
+    background-position:
+        calc(100% - 22px) 50%,
+        calc(100% - 16px) 50%,
+        0 0;
+
+    background-size:
+        6px 6px,
+        6px 6px,
+        100% 100%;
+
+    background-repeat: no-repeat;
+}
+
+.repo-select:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent-3);
+}
+
+.repo-select:focus {
+    border-color: var(--accent-2);
+    box-shadow: 0 0 0 3px var(--card-glow);
+}
+
+.repo-select option {
+    color: #111;
+    background: #fff;
+}
+
+@media (max-width: 760px) {
+    .repo-box {
+        width: 100%;
+        margin-left: 0;
+        align-items: flex-start;
+        flex-direction: column;
+        border-radius: 18px;
+    }
+
+    .repo-select {
+        width: 100%;
+        min-width: 100%;
+    }
+}
