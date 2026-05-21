@@ -98,6 +98,26 @@ const subjects = [
                         link: "https://forms.cloud.microsoft/r/q1p4Bw8cG3"
                     }
                 ]
+            },
+
+            {
+                name: "LAB: Module Activity Reviewers",
+                icon: "📝",
+                description: "Module Activity based Questions.",
+                items: [
+                    {
+                        title: "Module 3",
+                        link: ""
+                    },
+                    {
+                        title: "Module 4",
+                        link: ""
+                    },
+                    {
+                        title: "Module 5",
+                        link: ""
+                    }
+                ]
             }
         ]
     },
