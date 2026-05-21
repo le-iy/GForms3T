@@ -26,7 +26,7 @@ const subjects = [
                         title: "Quiz 1 Prep",
                         description: "Module-based generated Q1 prep.",
                         link: "https://forms.cloud.microsoft/r/sFBma6TMCW",
-                        collabLink: ""
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUQVc0WVNDVFJCTzRDSlYzR1RDUklXWk1DQi4u&Token=0d58cf76bf824ecb9c947ee6f62708fc"
                     }
                 ]
             }
