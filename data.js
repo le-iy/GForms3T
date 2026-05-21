@@ -108,15 +108,15 @@ const subjects = [
                 repositories: [
                     {
                         title: "Module 3 Source PDF",
-                        link: "File_Bank/Activity Lab 3.pdf"
+                        link: "File_Bank/GED0081/Activity Lab 3.pdf"
                     },
                     {
                         title: "Module 4 Source PDF",
-                        link: "File_Bank/Activity Lab 4.pdf"
+                        link: "File_Bank/GED0081/Activity Lab 4.pdf"
                     },
                     {
                         title: "Module 5 Source PDF",
-                        link: "File_Bank/Activity Lab 5.pdf"
+                        link: "File_Bank/GED0081/Activity Lab 5.pdf"
                     }
                 ],
 
