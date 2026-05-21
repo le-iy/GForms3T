@@ -654,7 +654,6 @@ body[data-theme="gothic"] .card-footer {
 }
 
 .repo-select:hover {
-    transform: translateY(-2px);
     border-color: var(--accent-3);
 }
 
