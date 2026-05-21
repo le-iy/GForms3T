@@ -196,9 +196,15 @@ const subjects = [
                     },
                     {
                         title: "Module 3",
-                        description: "Planning and Scoping a Penetration Testing Assessment.",
+                        description: "Information Gathering and Vulnerability Scanning.",
                         link: "https://forms.cloud.microsoft/r/D1MAdRCSVV",
                         collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUMjBQR1o5NEsyUkZUWjFENllWUlc4WU5PRi4u&Token=8c8ffb2a02324a60b50051f86df74fe5"
+                    },
+                    {
+                        title: "Module 4",
+                        description: "Social Engineering Attacks.",
+                        link: "https://forms.cloud.microsoft/r/TWsW554u4u",
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUMUtPUlAwRDVSWVpJTU1BMFlJWjlEVUFLTi4u&Token=a092688b06084ce8afdcb98f766e6387"
                     }
                 ]
             },
