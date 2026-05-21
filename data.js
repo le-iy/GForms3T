@@ -12,7 +12,8 @@ const subjects = [
                     {
                         title: "Formative 1",
                         description: "Module 1 formative quiz.",
-                        link: "https://forms.cloud.microsoft/r/zsvLhD2qfx"
+                        link: "https://forms.cloud.microsoft/r/zsvLhD2qfx",
+                        collabLink: ""
                     }
                 ]
             },
@@ -24,7 +25,8 @@ const subjects = [
                     {
                         title: "Quiz 1 Prep",
                         description: "Module-based generated Q1 prep.",
-                        link: "https://forms.cloud.microsoft/r/sFBma6TMCW"
+                        link: "https://forms.cloud.microsoft/r/sFBma6TMCW",
+                        collabLink: ""
                     }
                 ]
             }
@@ -44,12 +46,14 @@ const subjects = [
                     {
                         title: "Formative 1",
                         description: "Introduction to PHP.",
-                        link: "https://forms.cloud.microsoft/r/3ZBqx1cPsZ"
+                        link: "https://forms.cloud.microsoft/r/3ZBqx1cPsZ",
+                        collabLink: ""
                     },
                     {
                         title: "Formative 2",
                         description: "Control Structures.",
-                        link: "https://forms.cloud.microsoft/r/eeqnr2GcXn"
+                        link: "https://forms.cloud.microsoft/r/eeqnr2GcXn",
+                        collabLink: ""
                     }
                 ]
             }
@@ -69,7 +73,8 @@ const subjects = [
                     {
                         title: "Formative 1",
                         description: "Lecture formative quiz.",
-                        link: "https://forms.cloud.microsoft/r/xSTHYiVjV0"
+                        link: "https://forms.cloud.microsoft/r/xSTHYiVjV0",
+                        collabLink: ""
                     }
                 ]
             },
@@ -82,7 +87,8 @@ const subjects = [
                     {
                         title: "Short Quiz 1",
                         description: "Lab short quiz.",
-                        link: "https://forms.cloud.microsoft/r/ffz0iNdSj0"
+                        link: "https://forms.cloud.microsoft/r/ffz0iNdSj0",
+                        collabLink: ""
                     }
                 ]
             },
@@ -95,7 +101,8 @@ const subjects = [
                     {
                         title: "Pretest 1",
                         description: "Lecture pretest.",
-                        link: "https://forms.cloud.microsoft/r/q1p4Bw8cG3"
+                        link: "https://forms.cloud.microsoft/r/q1p4Bw8cG3",
+                        collabLink: ""
                     }
                 ]
             },
@@ -124,17 +131,20 @@ const subjects = [
                     {
                         title: "Module 3",
                         description: "Module 3 activity reviewer.",
-                        link: "https://forms.cloud.microsoft/r/JKifvH7tCE"
+                        link: "https://forms.cloud.microsoft/r/JKifvH7tCE",
+                        collabLink: ""
                     },
                     {
                         title: "Module 4",
                         description: "Module 4 activity reviewer.",
-                        link: "https://forms.cloud.microsoft/r/VveRqdGh45"
+                        link: "https://forms.cloud.microsoft/r/VveRqdGh45",
+                        collabLink: ""
                     },
                     {
                         title: "Module 5",
                         description: "Module 5 activity reviewer.",
-                        link: "https://forms.cloud.microsoft/r/9VLqdT5PLQ"
+                        link: "https://forms.cloud.microsoft/r/9VLqdT5PLQ",
+                        collabLink: ""
                     }
                 ]
             }
@@ -154,7 +164,8 @@ const subjects = [
                     {
                         title: "Formative 1",
                         description: "Digital Forensics formative quiz.",
-                        link: "https://forms.cloud.microsoft/r/zhCKdRy5Va"
+                        link: "https://forms.cloud.microsoft/r/zhCKdRy5Va",
+                        collabLink: ""
                     }
                 ]
             }
@@ -174,12 +185,14 @@ const subjects = [
                     {
                         title: "Module 1",
                         description: "Introduction to Ethical Hacking and Penetration Testing.",
-                        link: "https://forms.cloud.microsoft/r/76PxpVAPYR"
+                        link: "https://forms.cloud.microsoft/r/76PxpVAPYR",
+                        collabLink: ""
                     },
                     {
                         title: "Module 2",
                         description: "Planning and Scoping a Penetration Testing Assessment.",
-                        link: "https://forms.cloud.microsoft/r/kKz4Z0TS74"
+                        link: "https://forms.cloud.microsoft/r/kKz4Z0TS74",
+                        collabLink: ""
                     }
                 ]
             },
@@ -192,7 +205,8 @@ const subjects = [
                     {
                         title: "Formative 1",
                         description: "Ethical Hacking formative quiz.",
-                        link: "https://forms.cloud.microsoft/r/myUu9q7Fxy"
+                        link: "https://forms.cloud.microsoft/r/myUu9q7Fxy",
+                        collabLink: ""
                     }
                 ]
             }
