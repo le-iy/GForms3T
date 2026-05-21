@@ -459,6 +459,8 @@ h1 {
 .breadcrumb {
     color: var(--muted);
     font-size: 14px;
+    flex: 1;
+    min-width: 220px;
 }
 
 .card-grid {
@@ -697,12 +699,40 @@ body[data-theme="gothic"] .card-footer {
     font-weight: bold;
     box-shadow: 0 8px 18px var(--shadow-soft);
     transition: 0.2s ease;
+    white-space: nowrap;
 }
 
 .collab-btn:hover {
     transform: translateY(-2px);
     background: linear-gradient(135deg, var(--accent-2), var(--accent-1));
     color: var(--text);
+}
+
+@media (max-width: 760px) {
+    .nav-row {
+        align-items: flex-start;
+    }
+
+    .breadcrumb {
+        flex: 1 1 100%;
+        min-width: 100%;
+        order: 3;
+    }
+
+    .back-btn {
+        order: 1;
+    }
+
+    .collab-btn {
+        order: 2;
+        margin-left: 0;
+    }
+
+    .repo-box {
+        order: 4;
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 .disabled-card {
@@ -715,8 +745,15 @@ body[data-theme="gothic"] .card-footer {
     box-shadow: none;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 480px) {
+    .back-btn,
     .collab-btn {
-        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .breadcrumb {
+        font-size: 13px;
+        line-height: 1.4;
     }
 }
