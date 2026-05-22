@@ -33,6 +33,18 @@ const subjects = [
                         description: "Module-based generated Q1 prep.",
                         link: "https://forms.cloud.microsoft/r/sFBma6TMCW",
                         collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUNE9YRTFYQTUwMEJDSVJVWUNZMzQ0RVVVSC4u&Token=f078d5fcf9844b95aae162834cf64c42"
+                    },
+                    {
+                        title: "Quiz 2 [S1] Prep",
+                        description: "Module-based generated Q2 prep.",
+                        link: "https://forms.cloud.microsoft/r/6GqBcJG2aU",
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUMlYwSFlCV0g2OUFYRUFKRDNKQVRDMFk2Sy4u&Token=5d2541223e6d4265bf36569be7f96b82"
+                    },
+                    {
+                        title: "Quiz 2 [S2] Prep",
+                        description: "Module-based generated Q3 prep.",
+                        link: "https://forms.cloud.microsoft/r/xB41QU686x",
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUM0lJWFNJT1FPM0IzNkNDWUdXTU1UWkEzMy4u&Token=ec9204f757984ec6acc8162db7cee5ae"
                     }
                 ]
             }
