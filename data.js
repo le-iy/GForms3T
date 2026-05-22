@@ -14,6 +14,12 @@ const subjects = [
                         description: "Module 1 formative quiz.",
                         link: "https://forms.cloud.microsoft/r/zsvLhD2qfx",
                         collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUQVc0WVNDVFJCTzRDSlYzR1RDUklXWk1DQi4u&Token=0d58cf76bf824ecb9c947ee6f62708fc"
+                    },
+                    {
+                        title: "Formative 2",
+                        description: "Module 2 formative quiz.",
+                        link: "https://forms.cloud.microsoft/r/uqYK9NUmgw",
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUM0xEUU9KR1RGUEE3WFVLS0o0UUU2OE42RC4u&Token=a490ab495f1949229bd4ba496ff696cf"
                     }
                 ]
             },
@@ -26,7 +32,7 @@ const subjects = [
                         title: "Quiz 1 Prep",
                         description: "Module-based generated Q1 prep.",
                         link: "https://forms.cloud.microsoft/r/sFBma6TMCW",
-                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUQVc0WVNDVFJCTzRDSlYzR1RDUklXWk1DQi4u&Token=0d58cf76bf824ecb9c947ee6f62708fc"
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUNE9YRTFYQTUwMEJDSVJVWUNZMzQ0RVVVSC4u&Token=f078d5fcf9844b95aae162834cf64c42"
                     }
                 ]
             }
