@@ -205,6 +205,12 @@ const subjects = [
                         description: "Social Engineering Attacks.",
                         link: "https://forms.cloud.microsoft/r/TWsW554u4u",
                         collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUMUtPUlAwRDVSWVpJTU1BMFlJWjlEVUFLTi4u&Token=a092688b06084ce8afdcb98f766e6387"
+                    },
+                    {
+                        title: "Module 5",
+                        description: "Exploiting Wired and Wireless Networks.",
+                        link: "https://forms.cloud.microsoft/r/EEcT29JLae",
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUQUpBREtJTU4xUUxEQUZJRVU3ODY4TzZZVS4u&Token=b35ca10ed17949ddbc34c885dcdc8e55"
                     }
                 ]
             },
