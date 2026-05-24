@@ -405,29 +405,31 @@ h1 {
 .list-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(280px, 1fr));
-    gap: 16px 28px;
+    gap: 14px 28px;
     align-items: start;
 }
 
 .list-grid.category-view,
 .list-grid.links-view {
-    grid-template-columns: minmax(320px, 620px);
+    grid-template-columns: minmax(320px, 720px);
 }
 
 .subject-row,
 .category-row {
-    min-height: 66px;
+    min-height: 56px;
+    width: 100%;
     border: 1.6px solid var(--border);
-    border-radius: 17px;
+    border-radius: 16px;
     background: rgba(255, 255, 255, 0.42);
     color: var(--text);
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 18px;
-    padding: 14px 22px;
+    padding: 12px 20px;
     cursor: pointer;
     transition: 0.18s ease;
+    text-align: left;
 }
 
 .subject-row:hover,
@@ -439,53 +441,67 @@ h1 {
 }
 
 .row-title {
-    font-size: 22px;
-    font-weight: 800;
-    letter-spacing: 6px;
+    flex: 1;
+    font-size: 20px;
+    font-weight: 750;
+    letter-spacing: 5px;
     text-transform: uppercase;
-    line-height: 1.12;
+    line-height: 1.15;
+    text-align: left;
 }
 
 .row-meta {
-    font-size: 14px;
+    min-width: 70px;
+    font-size: 13px;
     color: var(--text);
     text-align: right;
-    white-space: normal;
+    white-space: nowrap;
     line-height: 1.2;
+}
+
+.category-row .row-title {
+    max-width: none;
+    text-align: left;
+}
+
+.category-row .row-meta {
+    margin-left: auto;
 }
 
 .link-row-wrap {
     display: grid;
-    grid-template-columns: minmax(320px, 430px) 145px;
-    gap: 14px;
+    grid-template-columns: minmax(320px, 480px) 145px;
+    gap: 12px;
     align-items: start;
 }
 
 .link-main {
-    min-height: 76px;
+    min-height: 68px;
     border: 1.6px solid var(--border);
-    border-radius: 17px;
+    border-radius: 16px;
     background: rgba(255, 255, 255, 0.42);
     color: var(--text);
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 18px;
-    padding: 16px 20px 16px 24px;
+    padding: 14px 18px 14px 22px;
     transition: 0.18s ease;
     cursor: pointer;
+    text-align: left;
 }
 
 .link-title {
-    letter-spacing: 5px;
-    max-width: 230px;
+    letter-spacing: 4px;
+    max-width: none;
     word-break: normal;
+    text-align: left;
 }
 
 .open-link {
     color: var(--text);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
     white-space: nowrap;
     pointer-events: none;
 }
@@ -496,13 +512,13 @@ h1 {
 
 .source-btn {
     width: 100%;
-    min-height: 76px;
+    min-height: 68px;
     border: 1.6px solid var(--border);
-    border-radius: 17px;
+    border-radius: 16px;
     background: rgba(255, 255, 255, 0.42);
     color: var(--text);
     cursor: pointer;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 800;
     display: flex;
     align-items: center;
@@ -623,7 +639,7 @@ h1 {
     }
 
     .row-title {
-        font-size: 19px;
+        font-size: 18px;
         letter-spacing: 4px;
     }
 
@@ -631,8 +647,8 @@ h1 {
     .category-row,
     .link-main,
     .source-btn {
-        min-height: 62px;
-        padding: 14px 16px;
+        min-height: 60px;
+        padding: 13px 16px;
     }
 
     .row-meta,
