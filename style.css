@@ -398,11 +398,43 @@ h1 {
     display: none;
 }
 
+/* CLICKABLE BREADCRUMB */
 .breadcrumb {
     color: var(--text);
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 2px;
-    line-height: 1.2;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.crumb-btn,
+.crumb-current,
+.crumb-separator {
+    font: inherit;
+    letter-spacing: inherit;
+    color: var(--text);
+}
+
+.crumb-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+.crumb-btn:hover {
+    text-decoration: underline;
+}
+
+.crumb-current {
+    opacity: 0.95;
+}
+
+.crumb-separator {
+    opacity: 0.75;
 }
 
 /* LIST LAYOUT */
@@ -710,8 +742,9 @@ h1 {
     }
 
     .breadcrumb {
-        font-size: 19px;
+        font-size: 16px;
         line-height: 1.35;
+        gap: 6px;
     }
 
     .nav-row {
