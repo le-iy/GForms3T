@@ -3,57 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms Dashboard</title>
-    <link rel="stylesheet" href="style.css?v=7">
+    <title>Forms Central</title>
+    <link rel="stylesheet" href="style.css?v=8">
 </head>
 <body data-theme="ember">
 
 <div class="app">
 
     <header class="top-bar">
-        <div>
-            <p class="eyebrow">Google Forms Organizer</p>
-            <h1>Forms Dashboard</h1>
+        <div class="brand-block">
+            <p class="eyebrow">Reviewers Organizer</p>
+            <h1>Forms Central</h1>
             <p class="subtitle">Organized links for formatives, summatives, quizzes, and more.</p>
         </div>
 
-        <div class="theme-panel">
-            <label for="themeSelect" class="theme-label">Palette</label>
+        <div class="controls-panel">
+            <div class="mode-switch" aria-label="Link mode switch">
+                <button id="practiceModeBtn" class="mode-btn active" type="button">
+                    Practice Links
+                </button>
+                <button id="editModeBtn" class="mode-btn" type="button">
+                    Edit Links
+                </button>
+            </div>
 
-            <select id="themeSelect" class="theme-select">
-                <option value="ocean">🌊 Ocean</option>
-                <option value="violet">🟣 Violet</option>
-                <option value="sunset">🌅 Sunset</option>
-                <option value="dusk">🌆 Dusk</option>
-                <option value="ember">🔥 Ember</option>
-                <option value="forest">🌲 Forest</option>
-
-                <option value="luxury">🖤 Luxury</option>
-                <option value="retro">🧡 Retro</option>
-                <option value="pop">💗 Pop</option>
-                <option value="lotus">🪷 Lotus</option>
-                <option value="gothic">🌙 Gothic</option>
-                <option value="depths">🪼 Depths</option>
-            </select>
+            <div class="theme-dropdown-wrap">
+                <label for="themeSelect" class="sr-only">Palette</label>
+                <select id="themeSelect" class="theme-select">
+                    <option value="ocean">🌊 Ocean</option>
+                    <option value="violet">🟣 Violet</option>
+                    <option value="sunset">🌅 Sunset</option>
+                    <option value="dusk">🌆 Dusk</option>
+                    <option value="ember">🔥 Ember</option>
+                    <option value="forest">🌲 Forest</option>
+                    <option value="luxury">🖤 Luxury</option>
+                    <option value="retro">🧡 Retro</option>
+                    <option value="pop">💗 Pop</option>
+                    <option value="lotus">🪷 Lotus</option>
+                    <option value="gothic">🌙 Gothic</option>
+                    <option value="depths">🪼 Depths</option>
+                </select>
+            </div>
         </div>
     </header>
 
     <main class="main-card">
         <div class="nav-row">
-            <button id="backBtn" class="back-btn hidden">← Back</button>
+            <button id="backBtn" class="back-btn hidden" type="button">← Back</button>
             <div id="breadcrumb" class="breadcrumb">Home</div>
-
-            <button id="collabBtn" class="collab-btn hidden" type="button">
-                Collab Links
-            </button>
         </div>
 
-        <section id="cardContainer" class="card-grid"></section>
+        <section id="cardContainer" class="list-grid"></section>
     </main>
 
 </div>
 
-<script src="data.js?v=7"></script>
-<script src="script.js?v=7"></script>
+<script src="data.js?v=8"></script>
+<script src="script.js?v=8"></script>
 </body>
 </html>
