@@ -67,13 +67,8 @@ function clearContainer() {
 }
 
 function countItems(category) {
-    if (!category.items || category.items.length === 0) {
-        return "0 links";
-    }
-
-    return category.items.length === 1
-        ? "1 link"
-        : `${category.items.length} links`;
+    const itemCount = category.items ? category.items.length : 0;
+    return itemCount === 1 ? "1 link" : `${itemCount} links`;
 }
 
 function renderHome() {
@@ -111,6 +106,7 @@ function renderCategories(subject) {
 
     clearContainer();
     cardContainer.classList.add("category-view");
+
     updateBreadcrumb();
     backBtn.classList.remove("hidden");
 
@@ -144,6 +140,7 @@ function renderLinks(category) {
 
     clearContainer();
     cardContainer.classList.add("links-view");
+
     updateBreadcrumb();
     backBtn.classList.remove("hidden");
 
@@ -199,7 +196,10 @@ function createSourcesBlock(category, item, index) {
     const sourceBtn = document.createElement("button");
     sourceBtn.className = "source-btn";
     sourceBtn.type = "button";
-    sourceBtn.innerHTML = `Sources <span>⌄</span>`;
+    sourceBtn.innerHTML = `
+        <span class="source-label">Sources</span>
+        <span class="source-arrow">⌄</span>
+    `;
 
     const sourceMenu = document.createElement("div");
     sourceMenu.className = "source-menu";
