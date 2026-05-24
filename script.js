@@ -31,7 +31,7 @@ function applyMode(mode) {
 
     updateBreadcrumb();
 
-    if (currentView === "links") {
+    if (currentView === "links" && selectedCategory) {
         renderLinks(selectedCategory);
     }
 }
@@ -158,13 +158,15 @@ function renderLinks(category) {
         linkMain.className = "link-main";
 
         linkMain.innerHTML = `
-            <span class="row-title">${item.title}</span>
-            ${
-                selectedUrl
-                    ? `<a class="open-link" href="${selectedUrl}" target="_blank" rel="noopener noreferrer">${openText}</a>`
-                    : `<span class="open-link">No link</span>`
-            }
+            <span class="row-title link-title">${item.title}</span>
+            <span class="open-link">${selectedUrl ? openText : "No link"}</span>
         `;
+
+        if (selectedUrl) {
+            linkMain.addEventListener("click", () => {
+                window.open(selectedUrl, "_blank", "noopener,noreferrer");
+            });
+        }
 
         const sourcesWrap = createSourcesBlock(category, item, index);
 
