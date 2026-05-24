@@ -46,19 +46,55 @@ function getModeLabel() {
 }
 
 function updateBreadcrumb() {
-    if (currentView === "home") {
-        breadcrumb.textContent = "Home";
-        return;
+  breadcrumb.innerHTML = "";
+
+  function addSeparator() {
+    const separator = document.createElement("span");
+    separator.className = "crumb-separator";
+    separator.textContent = "/";
+    breadcrumb.appendChild(separator);
+  }
+
+  function addCrumb(label, onClick, isCurrent = false) {
+    const crumb = document.createElement(isCurrent ? "span" : "button");
+    crumb.className = isCurrent ? "crumb-current" : "crumb-btn";
+    crumb.textContent = label;
+
+    if (!isCurrent) {
+      crumb.type = "button";
+      crumb.addEventListener("click", onClick);
     }
 
-    if (currentView === "categories" && selectedSubject) {
-        breadcrumb.textContent = `Home / ${getModeLabel()} / ${selectedSubject.name}`;
-        return;
-    }
+    breadcrumb.appendChild(crumb);
+  }
 
-    if (currentView === "links" && selectedSubject && selectedCategory) {
-        breadcrumb.textContent = `Home / ${getModeLabel()} / ${selectedSubject.name} / ${selectedCategory.name}`;
-    }
+  addCrumb("Home", () => renderHome(), currentView === "home");
+
+  if (currentView === "home") return;
+
+  addSeparator();
+
+  addCrumb(getModeLabel(), () => renderHome(), false);
+
+  if (selectedSubject) {
+    addSeparator();
+
+    addCrumb(
+      selectedSubject.name,
+      () => renderCategories(selectedSubject),
+      currentView === "categories"
+    );
+  }
+
+  if (selectedCategory) {
+    addSeparator();
+
+    addCrumb(
+      selectedCategory.name,
+      () => renderLinks(selectedCategory),
+      currentView === "links"
+    );
+  }
 }
 
 function clearContainer() {
