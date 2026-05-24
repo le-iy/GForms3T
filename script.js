@@ -170,7 +170,7 @@ function renderLinks(category) {
             });
         }
 
-        const sourcesWrap = createSourcesBlock(category, item, index);
+        const sourcesWrap = createSourcesBlock(item, index);
 
         rowWrap.appendChild(linkMain);
         rowWrap.appendChild(sourcesWrap);
@@ -179,23 +179,16 @@ function renderLinks(category) {
     });
 }
 
-function createSourcesBlock(category, item, index) {
+function createSourcesBlock(item, index) {
     const sourcesWrap = document.createElement("div");
     sourcesWrap.className = "sources-wrap";
 
-    const sources = [];
-
-    if (Array.isArray(item.repositories)) {
-        sources.push(...item.repositories);
-    }
-
-    if (Array.isArray(category.repositories)) {
-        sources.push(...category.repositories);
-    }
+    const sources = Array.isArray(item.repositories) ? item.repositories : [];
 
     const sourceBtn = document.createElement("button");
     sourceBtn.className = "source-btn";
     sourceBtn.type = "button";
+
     sourceBtn.innerHTML = `
         <span class="source-label">Sources</span>
         <span class="source-arrow">⌄</span>
