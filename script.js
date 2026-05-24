@@ -26,8 +26,13 @@ function applyMode(mode) {
     linkMode = mode;
     localStorage.setItem("formsDashboardLinkMode", mode);
 
-    practiceModeBtn.classList.toggle("active", mode === "practice");
-    editModeBtn.classList.toggle("active", mode === "edit");
+    if (practiceModeBtn) {
+        practiceModeBtn.classList.toggle("active", mode === "practice");
+    }
+
+    if (editModeBtn) {
+        editModeBtn.classList.toggle("active", mode === "edit");
+    }
 
     updateBreadcrumb();
 
