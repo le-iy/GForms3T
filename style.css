@@ -453,7 +453,7 @@ h1 {
 /* SUBJECT + CATEGORY CARDS */
 .subject-row,
 .category-row {
-    min-height: 56px;
+    min-height: 72px;
     width: 100%;
     border: 1.6px solid var(--border);
     border-radius: 16px;
@@ -465,7 +465,7 @@ h1 {
     justify-content: space-between;
     gap: 18px;
 
-    padding: 12px 20px;
+    padding: 18px 22px;
     cursor: pointer;
     transition: 0.18s ease;
     text-align: left;
