@@ -227,7 +227,7 @@ function createSourcesBlock(item, index) {
 
     sourceBtn.innerHTML = `
         <span class="source-label">Sources</span>
-        <span class="source-arrow">⌄</span>
+        <span class="source-arrow">⬇️</span>
     `;
 
     const sourceMenu = document.createElement("div");
