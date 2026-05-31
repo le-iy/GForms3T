@@ -704,7 +704,7 @@ h1 {
     }
 
     .source-label::before {
-        content: "Module ";
+        content: "";
         font-size: 12px;
         font-weight: 600;
         opacity: 0.75;
