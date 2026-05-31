@@ -285,13 +285,32 @@ const subjects = [
                         title: "Formative 1",
                         description: "Ethical Hacking formative quiz.",
                         link: "https://forms.cloud.microsoft/r/myUu9q7Fxy",
-                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUNVpQRTc4S0dXOUpDR1M2T1dMVTNRTllTSy4u&Token=a39a7f3d4ec94424b05c8c45ae629443"
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUNVpQRTc4S0dXOUpDR1M2T1dMVTNRTllTSy4u&Token=a39a7f3d4ec94424b05c8c45ae629443",
+                        repositories: [
+                            {
+                                title: "Canvas Module 1",
+                                link: "File_Bank/IT0202/Module 1 - Computer Forensics Fundamentals (Revised) (2).pdf"
+                            },
+                            {
+                                title: "Canvas Module 2",
+                                link: "File_Bank/IT0202/Module 2 - Computer Forensics Investigation Process (Revised) (2).pdf"
+                            }
+                        ]
                     },
                     {
                         title: "Formative 2",
                         description: "Ethical Hacking formative quiz.",
                         link: "https://forms.cloud.microsoft/r/7y04JbLJZf",
-                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUMlAyWUxSWFNFR1dUQlA2MjU0OEo0NlJKMC4u&Token=3bbbe732da3541749a63c37d07b9a923"
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUMlAyWUxSWFNFR1dUQlA2MjU0OEo0NlJKMC4u&Token=3bbbe732da3541749a63c37d07b9a923",
+                        repositories: [
+                            {
+                                title: "Canvas Module 3",
+                                link: "File_Bank/IT0202/Module 3 - Understanding Hard Disks and File Systems (Revised) (1).pdf"
+                            },
+                            {
+                                title: "Canvas Module 4",
+                                link: "File_Bank/IT0202/Module 4 - Data Acquisition and Duplication - Defeating Anti-Forensic Techniques (Revised) (1).pdf"}
+                        ]
                     }
                 ]
             }
