@@ -201,7 +201,7 @@ const subjects = [
                         repositories: [
                             {
                                 title: "Ethical Hacking Midterm Reviewer",
-                                link: "File_Bank/IT0202/Netacad M1.pdf"
+                                link: "File_Bank/IT0202/Ethical Hacking Midterm Reviewer.pdf"
                             },
                             {
                                 title: "Module 1 Source PDF",
@@ -217,7 +217,7 @@ const subjects = [
                         repositories: [
                             {
                                 title: "Ethical Hacking Midterm Reviewer",
-                                link: "File_Bank/IT0202/Netacad M1.pdf"
+                                link: "File_Bank/IT0202/Ethical Hacking Midterm Reviewer.pdf"
                             },
                             {
                                 title: "Module 2 Source PDF",
@@ -233,7 +233,7 @@ const subjects = [
                         repositories: [
                             {
                                 title: "Ethical Hacking Midterm Reviewer",
-                                link: "File_Bank/IT0202/Netacad M1.pdf"
+                                link: "File_Bank/IT0202/Ethical Hacking Midterm Reviewer.pdf"
                             },
                             {
                                 title: "Module 3 Source PDF",
@@ -249,7 +249,7 @@ const subjects = [
                         repositories: [
                             {
                                 title: "Ethical Hacking Midterm Reviewer",
-                                link: "File_Bank/IT0202/Netacad M1.pdf"
+                                link: "File_Bank/IT0202/Ethical Hacking Midterm Reviewer.pdf"
                             },
                             {
                                 title: "Module 4 Source PDF",
@@ -265,7 +265,7 @@ const subjects = [
                         repositories: [
                             {
                                 title: "Ethical Hacking Midterm Reviewer",
-                                link: "File_Bank/IT0202/Netacad M1.pdf"
+                                link: "File_Bank/IT0202/Ethical Hacking Midterm Reviewer.pdf"
                             },
                             {
                                 title: "Module 5 Source PDF",
