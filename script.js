@@ -11,6 +11,8 @@ const savedMode = localStorage.getItem("formsDashboardLinkMode") || "practice";
 let currentView = "home";
 let selectedSubject = null;
 let selectedCategory = null;
+let currentCategoryParent = null;
+let categoryTrail = [];
 let linkMode = savedMode;
 
 function applyTheme(themeName) {
@@ -46,55 +48,73 @@ function getModeLabel() {
 }
 
 function updateBreadcrumb() {
-  breadcrumb.innerHTML = "";
+    breadcrumb.innerHTML = "";
 
-  function addSeparator() {
-    const separator = document.createElement("span");
-    separator.className = "crumb-separator";
-    separator.textContent = "/";
-    breadcrumb.appendChild(separator);
-  }
-
-  function addCrumb(label, onClick, isCurrent = false) {
-    const crumb = document.createElement(isCurrent ? "span" : "button");
-    crumb.className = isCurrent ? "crumb-current" : "crumb-btn";
-    crumb.textContent = label;
-
-    if (!isCurrent) {
-      crumb.type = "button";
-      crumb.addEventListener("click", onClick);
+    function addSeparator() {
+        const separator = document.createElement("span");
+        separator.className = "crumb-separator";
+        separator.textContent = "/";
+        breadcrumb.appendChild(separator);
     }
 
-    breadcrumb.appendChild(crumb);
-  }
+    function addCrumb(label, onClick, isCurrent = false) {
+        const crumb = document.createElement(isCurrent ? "span" : "button");
+        crumb.className = isCurrent ? "crumb-current" : "crumb-btn";
+        crumb.textContent = label;
 
-  addCrumb("Home", () => renderHome(), currentView === "home");
+        if (!isCurrent) {
+            crumb.type = "button";
+            crumb.addEventListener("click", onClick);
+        }
 
-  if (currentView === "home") return;
+        breadcrumb.appendChild(crumb);
+    }
 
-  addSeparator();
+    addCrumb("Home", () => renderHome(), currentView === "home");
 
-  addCrumb(getModeLabel(), () => renderHome(), false);
+    if (currentView === "home") {
+        return;
+    }
 
-  if (selectedSubject) {
     addSeparator();
 
-    addCrumb(
-      selectedSubject.name,
-      () => renderCategories(selectedSubject),
-      currentView === "categories"
-    );
-  }
+    addCrumb(getModeLabel(), () => renderHome(), false);
 
-  if (selectedCategory) {
-    addSeparator();
+    if (selectedSubject) {
+        addSeparator();
 
-    addCrumb(
-      selectedCategory.name,
-      () => renderLinks(selectedCategory),
-      currentView === "links"
-    );
-  }
+        addCrumb(
+            selectedSubject.name,
+            () => renderCategories(selectedSubject, []),
+            currentView === "categories" && categoryTrail.length === 0
+        );
+    }
+
+    categoryTrail.forEach((category, index) => {
+        addSeparator();
+
+        const trailUpToHere = categoryTrail.slice(0, index + 1);
+        const isCurrentTrail =
+            currentView === "categories" &&
+            index === categoryTrail.length - 1 &&
+            !selectedCategory;
+
+        addCrumb(
+            category.name,
+            () => renderCategories(category, trailUpToHere),
+            isCurrentTrail
+        );
+    });
+
+    if (selectedCategory) {
+        addSeparator();
+
+        addCrumb(
+            selectedCategory.name,
+            () => renderLinks(selectedCategory),
+            currentView === "links"
+        );
+    }
 }
 
 function clearContainer() {
@@ -103,6 +123,24 @@ function clearContainer() {
 }
 
 function countItems(category) {
+    if (category.categories && category.categories.length > 0) {
+        let totalLinks = 0;
+
+        category.categories.forEach(innerCategory => {
+            if (innerCategory.items) {
+                totalLinks += innerCategory.items.length;
+            }
+        });
+
+        if (totalLinks === 0) {
+            return category.categories.length === 1
+                ? "1 category"
+                : `${category.categories.length} categories`;
+        }
+
+        return totalLinks === 1 ? "1 link" : `${totalLinks} links`;
+    }
+
     const itemCount = category.items ? category.items.length : 0;
     return itemCount === 1 ? "1 link" : `${itemCount} links`;
 }
@@ -111,6 +149,8 @@ function renderHome() {
     currentView = "home";
     selectedSubject = null;
     selectedCategory = null;
+    currentCategoryParent = null;
+    categoryTrail = [];
 
     clearContainer();
     updateBreadcrumb();
@@ -128,17 +168,18 @@ function renderHome() {
 
         row.addEventListener("click", () => {
             selectedSubject = subject;
-            renderCategories(subject);
+            renderCategories(subject, []);
         });
 
         cardContainer.appendChild(row);
     });
 }
 
-function renderCategories(subject) {
+function renderCategories(parent, trail = []) {
     currentView = "categories";
-    selectedSubject = subject;
     selectedCategory = null;
+    currentCategoryParent = parent;
+    categoryTrail = trail;
 
     clearContainer();
     cardContainer.classList.add("category-view");
@@ -146,12 +187,12 @@ function renderCategories(subject) {
     updateBreadcrumb();
     backBtn.classList.remove("hidden");
 
-    if (!subject.categories || subject.categories.length === 0) {
+    if (!parent.categories || parent.categories.length === 0) {
         cardContainer.innerHTML = `<div class="empty-message">No categories yet.</div>`;
         return;
     }
 
-    subject.categories.forEach(category => {
+    parent.categories.forEach(category => {
         const row = document.createElement("button");
         row.className = "category-row";
         row.type = "button";
@@ -162,8 +203,11 @@ function renderCategories(subject) {
         `;
 
         row.addEventListener("click", () => {
-            selectedCategory = category;
-            renderLinks(category);
+            if (category.categories && category.categories.length > 0) {
+                renderCategories(category, [...categoryTrail, category]);
+            } else {
+                renderLinks(category);
+            }
         });
 
         cardContainer.appendChild(row);
@@ -268,12 +312,23 @@ function createSourcesBlock(item, index) {
 }
 
 function goBack() {
-    if (currentView === "links" && selectedSubject) {
-        renderCategories(selectedSubject);
+    if (currentView === "links") {
+        renderCategories(currentCategoryParent, categoryTrail);
         return;
     }
 
     if (currentView === "categories") {
+        if (categoryTrail.length > 0) {
+            const newTrail = categoryTrail.slice(0, -1);
+            const newParent =
+                newTrail.length > 0
+                    ? newTrail[newTrail.length - 1]
+                    : selectedSubject;
+
+            renderCategories(newParent, newTrail);
+            return;
+        }
+
         renderHome();
     }
 }
