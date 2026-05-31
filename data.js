@@ -184,33 +184,6 @@ const subjects = [
     },
 
     {
-        name: "IT0203",
-        icon: "🔎💻",
-        description: "Digital Forensics",
-        categories: [
-            {
-                name: "Formatives",
-                icon: "📝",
-                description: "Canvas-based: Formative assessments.",
-                items: [
-                    {
-                        title: "Formative 1",
-                        description: "Digital Forensics formative quiz.",
-                        link: "https://forms.cloud.microsoft/r/zhCKdRy5Va",
-                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxURFZKRFJLQTVOQlpIM0VPQkdJTVY1TlhOSi4u&Token=3a62e81c999b4c2cad5313c787035b29"
-                    },
-                    {
-                        title: "Formative 2",
-                        description: "Digital Forensics formative quiz.",
-                        link: "https://forms.cloud.microsoft/r/zQqK44WjFv",
-                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EAXZJxttnntDsUKyJ6bK5bZUMzM0WVdRNFVPVExWNlI1OVk0WkpSSlhLTS4u&Token=cfeb8fe789a7432b87494f69fd879a71"
-                    }
-                ]
-            }
-        ]
-    },
-
-    {
         name: "IT0202",
         icon: "🕶️💻",
         description: "Ethical Hacking",
@@ -323,5 +296,32 @@ const subjects = [
                 ]
             }
         ]
-    }
+    },
+
+    {
+        name: "IT0203",
+        icon: "🔎💻",
+        description: "Digital Forensics",
+        categories: [
+            {
+                name: "Formatives",
+                icon: "📝",
+                description: "Canvas-based: Formative assessments.",
+                items: [
+                    {
+                        title: "Formative 1",
+                        description: "Digital Forensics formative quiz.",
+                        link: "https://forms.cloud.microsoft/r/zhCKdRy5Va",
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxURFZKRFJLQTVOQlpIM0VPQkdJTVY1TlhOSi4u&Token=3a62e81c999b4c2cad5313c787035b29"
+                    },
+                    {
+                        title: "Formative 2",
+                        description: "Digital Forensics formative quiz.",
+                        link: "https://forms.cloud.microsoft/r/zQqK44WjFv",
+                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EAXZJxttnntDsUKyJ6bK5bZUMzM0WVdRNFVPVExWNlI1OVk0WkpSSlhLTS4u&Token=cfeb8fe789a7432b87494f69fd879a71"
+                    }
+                ]
+            }
+        ]
+    }    
 ];
