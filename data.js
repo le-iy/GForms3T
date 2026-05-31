@@ -96,85 +96,97 @@ const subjects = [
         description: "Physics 1",
         categories: [
             {
-                name: "LEC: Formatives",
-                icon: "📝",
-                description: "Lecture formative assessments.",
-                items: [
+                name: "LEC",
+                icon: "📖",
+                description: "Lecture-based quizzes and pretests.",
+                categories: [
                     {
-                        title: "Formative 1",
-                        description: "Lecture formative quiz.",
-                        link: "https://forms.cloud.microsoft/r/xSTHYiVjV0",
-                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUQ01EQkNQNjgxT1g5SkE1SE5ETDNIOU1QTy4u&Token=3ef439a4dcce4f06b52337c84014edd1"
+                        name: "Formatives",
+                        icon: "📝",
+                        description: "Lecture formative assessments.",
+                        items: [
+                            {
+                                title: "Formative 1",
+                                description: "Lecture formative quiz.",
+                                link: "https://forms.cloud.microsoft/r/xSTHYiVjV0",
+                                collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUQ01EQkNQNjgxT1g5SkE1SE5ETDNIOU1QTy4u&Token=3ef439a4dcce4f06b52337c84014edd1"
+                            }
+                        ]
+                    },
+                    {
+                        name: "Pretest",
+                        icon: "📌",
+                        description: "Lecture pretest forms.",
+                        items: [
+                            {
+                                title: "Pretest 1",
+                                description: "Lecture pretest.",
+                                link: "https://forms.cloud.microsoft/r/q1p4Bw8cG3",
+                                collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUNU1ZREVaVTJOVDFGUjVPRkdBTDA4UzRFSC4u&Token=78ffa2287b5547ddb0cfcbff36e41247"
+                            }
+                        ]
                     }
                 ]
             },
 
             {
-                name: "LAB: Short Quizzes",
+                name: "LAB",
                 icon: "🧪",
-                description: "Canvas-based short quizzes.",
-                items: [
+                description: "Laboratory quizzes and module activity reviewers.",
+                categories: [
                     {
-                        title: "Short Quiz 1",
-                        description: "Lab short quiz.",
-                        link: "https://forms.cloud.microsoft/r/ffz0iNdSj0",
-                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUME1UV0JHUFU2MkNSTTVRMkVLM1VPM0VQNC4u&Token=2bdae6792ca645e4bd8a97c8265bb99b"
-                    }
-                ]
-            },
-
-            {
-                name: "LEC: PRETEST",
-                icon: "📌",
-                description: "Lecture pretest forms.",
-                items: [
-                    {
-                        title: "Pretest 1",
-                        description: "Lecture pretest.",
-                        link: "https://forms.cloud.microsoft/r/q1p4Bw8cG3",
-                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUNU1ZREVaVTJOVDFGUjVPRkdBTDA4UzRFSC4u&Token=78ffa2287b5547ddb0cfcbff36e41247"
-                    }
-                ]
-            },
-
-            {
-                name: "LAB: Module Activity Reviewers",
-                icon: "🔬",
-                description: "Module activity-based practice questions.",
-                items: [
-                    {
-                        title: "Module 3",
-                        description: "Module 3 activity reviewer.",
-                        link: "https://forms.cloud.microsoft/r/JKifvH7tCE",
-                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUNURQTDg2N0dGOEVDU01VVzFIOVA4REdMMi4u&Token=165988a5cf3e4e3785825649b362b512",
-                        repositories: [
+                        name: "Short Quizzes",
+                        icon: "🧪",
+                        description: "Canvas-based short quizzes.",
+                        items: [
                             {
-                                title: "Module 3 Source PDF",
-                                link: "File_Bank/GED0081/Activity Lab 3.pdf"
+                                title: "Short Quiz 1",
+                                description: "Lab short quiz.",
+                                link: "https://forms.cloud.microsoft/r/ffz0iNdSj0",
+                                collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUME1UV0JHUFU2MkNSTTVRMkVLM1VPM0VQNC4u&Token=2bdae6792ca645e4bd8a97c8265bb99b"
                             }
                         ]
                     },
                     {
-                        title: "Module 4",
-                        description: "Module 4 activity reviewer.",
-                        link: "https://forms.cloud.microsoft/r/VveRqdGh45",
-                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUNEgyQloyVkNFVlJPWlFFNzNRUjJJVllZSy4u&Token=8928765b897f45b1a885084102444c47",
-                        repositories: [
+                        name: "Module Activity Reviewers",
+                        icon: "🔬",
+                        description: "Module activity-based practice questions.",
+                        items: [
                             {
-                                title: "Module 4 Source PDF",
-                                link: "File_Bank/GED0081/Activity Lab 4.pdf"
-                            }
-                        ]
-                    },
-                    {
-                        title: "Module 5",
-                        description: "Module 5 activity reviewer.",
-                        link: "https://forms.cloud.microsoft/r/9VLqdT5PLQ",
-                        collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxURDZQRU1aTVhSV0NMNU1NVTk0NFZUM0hQRC4u&Token=157a9bea50584eed94c3aab7ac3b6c09",
-                        repositories: [
+                                title: "Module 3",
+                                description: "Module 3 activity reviewer.",
+                                link: "https://forms.cloud.microsoft/r/JKifvH7tCE",
+                                collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUNURQTDg2N0dGOEVDU01VVzFIOVA4REdMMi4u&Token=165988a5cf3e4e3785825649b362b512",
+                                repositories: [
+                                    {
+                                        title: "Module 3 Source PDF",
+                                        link: "File_Bank/GED0081/Activity Lab 3.pdf"
+                                    }
+                                ]
+                            },
                             {
-                                title: "Module 5 Source PDF",
-                                link: "File_Bank/GED0081/Activity Lab 5.pdf"
+                                title: "Module 4",
+                                description: "Module 4 activity reviewer.",
+                                link: "https://forms.cloud.microsoft/r/VveRqdGh45",
+                                collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUNEgyQloyVkNFVlJPWlFFNzNRUjJJVllZSy4u&Token=8928765b897f45b1a885084102444c47",
+                                repositories: [
+                                    {
+                                        title: "Module 4 Source PDF",
+                                        link: "File_Bank/GED0081/Activity Lab 4.pdf"
+                                    }
+                                ]
+                            },
+                            {
+                                title: "Module 5",
+                                description: "Module 5 activity reviewer.",
+                                link: "https://forms.cloud.microsoft/r/9VLqdT5PLQ",
+                                collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxURDZQRU1aTVhSV0NMNU1NVTk0NFZUM0hQRC4u&Token=157a9bea50584eed94c3aab7ac3b6c09",
+                                repositories: [
+                                    {
+                                        title: "Module 5 Source PDF",
+                                        link: "File_Bank/GED0081/Activity Lab 5.pdf"
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -336,7 +348,8 @@ const subjects = [
                             },
                             {
                                 title: "Canvas Module 4",
-                                link: "File_Bank/IT0203/Module 4 - Data Acquisition and Duplication - Defeating Anti-Forensic Techniques (Revised) (1).pdf"}
+                                link: "File_Bank/IT0203/Module 4 - Data Acquisition and Duplication - Defeating Anti-Forensic Techniques (Revised) (1).pdf"
+                            }
                         ]
                     }
                 ]
