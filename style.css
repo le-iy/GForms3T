@@ -699,6 +699,10 @@ h1 {
         opacity: 0.94;
     }
 
+    .source-label {
+        text-align: left;
+    }
+
     .sources-wrap {
         margin-top: -2px;
     }
@@ -772,7 +776,8 @@ h1 {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 30px;
+        width: 100%;
+        padding: 0 28px;
     }
 
     .row-meta,
