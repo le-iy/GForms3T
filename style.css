@@ -290,7 +290,7 @@ body {
 h1 {
     max-width: 600px;
     font-size: clamp(40px, 5vw, 58px);
-    letter-spacing: 16px;
+    letter-spacing: 12px;
     text-transform: uppercase;
     line-height: 0.92;
     color: var(--text);
@@ -496,9 +496,9 @@ h1 {
 .row-title {
     flex: 1;
     font-size: 20px;
-    font-weight: 750;
-    letter-spacing: 5px;
-    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: none;
     line-height: 1.15;
     text-align: left;
 }
@@ -576,7 +576,8 @@ h1 {
 }
 
 .link-title {
-    letter-spacing: 4px;
+    letter-spacing: 1px;
+    text-transform: none;
     max-width: none;
     word-break: normal;
     text-align: left;
@@ -607,7 +608,8 @@ h1 {
     font-weight: 800;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 22px;
     transition: 0.18s ease;
 }
 
@@ -697,6 +699,8 @@ h1 {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         opacity: 0.94;
+        justify-content: space-between;
+        padding: 0 28px;
     }
 
     .source-label {
@@ -705,13 +709,6 @@ h1 {
 
     .sources-wrap {
         margin-top: -2px;
-    }
-
-    .source-label::before {
-        content: "";
-        font-size: 12px;
-        font-weight: 600;
-        opacity: 0.75;
     }
 
     .source-menu {
@@ -733,7 +730,7 @@ h1 {
 
     h1 {
         font-size: 34px;
-        letter-spacing: 8px;
+        letter-spacing: 6px;
     }
 
     .eyebrow {
@@ -762,7 +759,11 @@ h1 {
 
     .row-title {
         font-size: 18px;
-        letter-spacing: 4px;
+        letter-spacing: 0;
+    }
+
+    .link-title {
+        letter-spacing: 0;
     }
 
     .subject-row,
