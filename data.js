@@ -204,7 +204,7 @@ const subjects = [
                                 link: "File_Bank/IT0202/Ethical Hacking Midterm Reviewer.pdf"
                             },
                             {
-                                title: "Module 1 Source PDF",
+                                title: "Netacad Mod 1 PDF",
                                 link: "File_Bank/IT0202/Netacad M1.pdf"
                             }
                         ]
@@ -220,7 +220,7 @@ const subjects = [
                                 link: "File_Bank/IT0202/Ethical Hacking Midterm Reviewer.pdf"
                             },
                             {
-                                title: "Module 2 Source PDF",
+                                title: "Netacad Mod 2 PDF",
                                 link: "File_Bank/IT0202/Netacad M2.pdf"
                             }
                         ]
@@ -236,7 +236,7 @@ const subjects = [
                                 link: "File_Bank/IT0202/Ethical Hacking Midterm Reviewer.pdf"
                             },
                             {
-                                title: "Module 3 Source PDF",
+                                title: "Netacad Mod 3 PDF",
                                 link: "File_Bank/IT0202/Netacad M3.pdf"
                             }
                         ]
@@ -252,7 +252,7 @@ const subjects = [
                                 link: "File_Bank/IT0202/Ethical Hacking Midterm Reviewer.pdf"
                             },
                             {
-                                title: "Module 4 Source PDF",
+                                title: "Netacad Mod 4 PDF",
                                 link: "File_Bank/IT0202/Netacad M4.pdf"
                             }
                         ]
@@ -268,7 +268,7 @@ const subjects = [
                                 link: "File_Bank/IT0202/Ethical Hacking Midterm Reviewer.pdf"
                             },
                             {
-                                title: "Module 5 Source PDF",
+                                title: "Netacad Mod 5 PDF",
                                 link: "File_Bank/IT0202/Netacad M5.pdf"
                             }
                         ]
