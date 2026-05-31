@@ -316,11 +316,11 @@ const subjects = [
                         repositories: [
                             {
                                 title: "Canvas Module 1",
-                                link: "File_Bank/IT0202/Module 1 - Computer Forensics Fundamentals (Revised) (2).pdf"
+                                link: "File_Bank/IT0203/Module 1 - Computer Forensics Fundamentals (Revised) (2).pdf"
                             },
                             {
                                 title: "Canvas Module 2",
-                                link: "File_Bank/IT0202/Module 2 - Computer Forensics Investigation Process (Revised) (2).pdf"
+                                link: "File_Bank/IT0203/Module 2 - Computer Forensics Investigation Process (Revised) (2).pdf"
                             }
                         ]
                     },
@@ -332,11 +332,11 @@ const subjects = [
                         repositories: [
                             {
                                 title: "Canvas Module 3",
-                                link: "File_Bank/IT0202/Module 3 - Understanding Hard Disks and File Systems (Revised) (1).pdf"
+                                link: "File_Bank/IT0203/Module 3 - Understanding Hard Disks and File Systems (Revised) (1).pdf"
                             },
                             {
                                 title: "Canvas Module 4",
-                                link: "File_Bank/IT0202/Module 4 - Data Acquisition and Duplication - Defeating Anti-Forensic Techniques (Revised) (1).pdf"}
+                                link: "File_Bank/IT0203/Module 4 - Data Acquisition and Duplication - Defeating Anti-Forensic Techniques (Revised) (1).pdf"}
                         ]
                     }
                 ]
