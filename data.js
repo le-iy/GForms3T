@@ -109,6 +109,73 @@ const subjects = [
                         ]
                     },
                     {
+                        name: "Short Quizzes (Laboratory)",
+                        icon: "🧪",
+                        description: "...",
+                        items: [
+                            {
+                                title: "Short Quiz 1",
+                                description: "Lab short quiz.",
+                                link: "https://forms.cloud.microsoft/r/x1JvYctfBN",
+                                collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUOTFBRE02TkUxVllGODdYSkZZUlpFWFFIMC4u&Token=8e28ae3611a54090a39196882e3c24c4",
+                                repositories: [
+                                    {
+                                        title: "Lab 1 Quiz",
+                                        link: "File_Bank/GED0081/ShortQuiz1.pdf"
+                                    }
+                                ]
+                            },
+                            {
+                                title: "Short Quiz 2",
+                                description: "Lab short quiz.",
+                                link: "https://forms.cloud.microsoft/r/Shx09zbxVC",
+                                collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUREU3MDZMRThETUwzN1U5UEUzRVNCWE1RVC4u&Token=a6c3d34f063c48c782ce636b9cda6183",
+                                repositories: [
+                                    {
+                                        title: "Lab 1 Quiz",
+                                        link: "File_Bank/GED0081/ShortQuiz2.pdf"
+                                    }
+                                ]
+                            },
+                            {
+                                title: "Short Quiz 3",
+                                description: "Lab short quiz.",
+                                link: "",
+                                collabLink: "",
+                                repositories: [
+                                    {
+                                        title: "Lab 1 Quiz",
+                                        link: "File_Bank/GED0081/ShortQuiz3.pdf"
+                                    }
+                                ]
+                            },
+                            {
+                                title: "Short Quiz 4",
+                                description: "Lab short quiz.",
+                                link: "",
+                                collabLink: "",
+                                repositories: [
+                                    {
+                                        title: "Lab 1 Quiz",
+                                        link: "File_Bank/GED0081/ShortQuiz4.pdf"
+                                    }
+                                ]
+                            },
+                            {
+                                title: "Short Quiz 5",
+                                description: "Lab short quiz.",
+                                link: "",
+                                collabLink: "",
+                                repositories: [
+                                    {
+                                        title: "Lab 1 Quiz",
+                                        link: "File_Bank/GED0081/ShortQuiz5.pdf"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         name: "Module Activity Reviewers",
                         icon: "🔬",
                         description: "Module activity-based practice questions.",
