@@ -73,19 +73,6 @@ const subjects = [
                                 collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUQ01EQkNQNjgxT1g5SkE1SE5ETDNIOU1QTy4u&Token=3ef439a4dcce4f06b52337c84014edd1"
                             }
                         ]
-                    },
-                    {
-                        name: "Pretest",
-                        icon: "📌",
-                        description: "Lecture pretest forms.",
-                        items: [
-                            {
-                                title: "Pretest 1",
-                                description: "Lecture pretest.",
-                                link: "https://forms.cloud.microsoft/r/q1p4Bw8cG3",
-                                collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUNU1ZREVaVTJOVDFGUjVPRkdBTDA4UzRFSC4u&Token=78ffa2287b5547ddb0cfcbff36e41247"
-                            }
-                        ]
                     }
                 ]
             },
@@ -95,19 +82,6 @@ const subjects = [
                 icon: "🧪",
                 description: "Laboratory quizzes and module activity reviewers.",
                 categories: [
-                    {
-                        name: "Short Quizzes (Canvas)",
-                        icon: "🧪",
-                        description: "Canvas-based short quizzes.",
-                        items: [
-                            {
-                                title: "Short Quiz 1",
-                                description: "Lab short quiz.",
-                                link: "https://forms.cloud.microsoft/r/ffz0iNdSj0",
-                                collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUME1UV0JHUFU2MkNSTTVRMkVLM1VPM0VQNC4u&Token=2bdae6792ca645e4bd8a97c8265bb99b"
-                            }
-                        ]
-                    },
                     {
                         name: "Short Quizzes (Laboratory)",
                         icon: "🧪",
