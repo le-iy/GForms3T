@@ -132,7 +132,7 @@ const subjects = [
                                 collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUREU3MDZMRThETUwzN1U5UEUzRVNCWE1RVC4u&Token=a6c3d34f063c48c782ce636b9cda6183",
                                 repositories: [
                                     {
-                                        title: "Lab 1 Quiz",
+                                        title: "Lab 2 Quiz",
                                         link: "File_Bank/GED0081/ShortQuiz2.pdf"
                                     }
                                 ]
@@ -144,7 +144,7 @@ const subjects = [
                                 collabLink: "",
                                 repositories: [
                                     {
-                                        title: "Lab 1 Quiz",
+                                        title: "Lab 3 Quiz",
                                         link: "File_Bank/GED0081/ShortQuiz3.pdf"
                                     }
                                 ]
@@ -156,7 +156,7 @@ const subjects = [
                                 collabLink: "",
                                 repositories: [
                                     {
-                                        title: "Lab 1 Quiz",
+                                        title: "Lab 4 Quiz",
                                         link: "File_Bank/GED0081/ShortQuiz4.pdf"
                                     }
                                 ]
@@ -168,7 +168,7 @@ const subjects = [
                                 collabLink: "",
                                 repositories: [
                                     {
-                                        title: "Lab 1 Quiz",
+                                        title: "Lab 5 Quiz",
                                         link: "File_Bank/GED0081/ShortQuiz5.pdf"
                                     }
                                 ]
