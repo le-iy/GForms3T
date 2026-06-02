@@ -140,8 +140,8 @@ const subjects = [
                             {
                                 title: "Short Quiz 3",
                                 description: "Lab short quiz.",
-                                link: "",
-                                collabLink: "",
+                                link: "https://forms.cloud.microsoft/r/D02S5vFdV0",
+                                collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUMFQ0T0dWVjZKM1lYOFVJRUdJMlBUUkg1QS4u&Token=174bd37b29f64a74858270c9af8f8c15",
                                 repositories: [
                                     {
                                         title: "Lab 3 Quiz",
