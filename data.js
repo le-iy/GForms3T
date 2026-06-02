@@ -176,7 +176,7 @@ const subjects = [
                         ]
                     },
                     {
-                        name: "Module Activity Reviewers",
+                        name: "Module Activity Practice Reviewers",
                         icon: "🔬",
                         description: "Module activity-based practice questions.",
                         items: [
