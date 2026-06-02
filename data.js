@@ -96,7 +96,7 @@ const subjects = [
                 description: "Laboratory quizzes and module activity reviewers.",
                 categories: [
                     {
-                        name: "Short Quizzes",
+                        name: "Short Quizzes (Canvas)",
                         icon: "🧪",
                         description: "Canvas-based short quizzes.",
                         items: [
