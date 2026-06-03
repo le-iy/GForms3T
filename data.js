@@ -36,7 +36,7 @@ const subjects = [
                         repositories: [
                                     {
                                         title: "Module 1 Canvas PDF",
-                                        link: "File_Bank/GED0081/[M1-MAIN] Introduction to Communication-2.pdf"
+                                        link: "File_Bank/GED0081/M1.pdf"
                                     }
                         ]
                     },
@@ -48,7 +48,7 @@ const subjects = [
                         repositories: [
                                     {
                                         title: "Module 2 S1 Canvas PDF",
-                                        link: "File_Bank/GED0081/[M2S1-POWERPOINT] Intellectual Property-1 (1).pdf"
+                                        link: "File_Bank/GED0081/M2S1.pdf"
                                     }
                         ]
                     },
@@ -60,7 +60,7 @@ const subjects = [
                         repositories: [
                                     {
                                         title: "Module 2 S2 Canvas PDF",
-                                        link: "File_Bank/GED0081/[M2S2-POWERPOINT] Ethics in Communication-1 (1).pdf"
+                                        link: "File_Bank/GED0081/M2S2.pdf"
                                     }
                         ]
                     }
