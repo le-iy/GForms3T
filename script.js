@@ -44,7 +44,11 @@ function applyMode(mode) {
 }
 
 function getModeLabel() {
-    return linkMode === "edit" ? "Edit Links" : "Practice Links";
+    if (linkMode === "edit") {
+        return "Edit Links";
+    }
+
+    return "Practice Links";
 }
 
 function updateBreadcrumb() {
@@ -133,16 +137,27 @@ function countItems(category) {
         });
 
         if (totalLinks === 0) {
-            return category.categories.length === 1
-                ? "1 category"
-                : `${category.categories.length} categories`;
+            if (category.categories.length === 1) {
+                return "1 category";
+            }
+
+            return `${category.categories.length} categories`;
         }
 
-        return totalLinks === 1 ? "1 link" : `${totalLinks} links`;
+        if (totalLinks === 1) {
+            return "1 link";
+        }
+
+        return `${totalLinks} links`;
     }
 
     const itemCount = category.items ? category.items.length : 0;
-    return itemCount === 1 ? "1 link" : `${itemCount} links`;
+
+    if (itemCount === 1) {
+        return "1 link";
+    }
+
+    return `${itemCount} links`;
 }
 
 function renderHome() {
@@ -320,6 +335,7 @@ function goBack() {
     if (currentView === "categories") {
         if (categoryTrail.length > 0) {
             const newTrail = categoryTrail.slice(0, -1);
+
             const newParent =
                 newTrail.length > 0
                     ? newTrail[newTrail.length - 1]
