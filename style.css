@@ -716,7 +716,10 @@ body[data-style="retroos"] .row-title {
     height: 100%;
 }
 
-.filter-menu:hover .filter-dropdown,
+.filter-menu.open .filter-dropdown {
+    display: block;
+}
+
 .filter-type-group:hover .type-submenu {
     display: block;
 }
