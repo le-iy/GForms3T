@@ -188,7 +188,11 @@ function renderOthersSection() {
         card.type = "button";
 
         card.innerHTML = `
-            <span class="row-title">${item.title}</span>
+            <div class="other-content">
+                <div class="other-title">${item.title}</div>
+                <div class="other-description">${item.description || ""}</div>
+            </div>
+
             <span class="row-meta">${item.type || ""}</span>
         `;
 
