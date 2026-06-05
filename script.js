@@ -21,6 +21,22 @@ let linkMode = savedMode;
 let otherSortMode = savedOtherSort;
 let otherTypeFilter = savedOtherType;
 
+document.addEventListener("click", event => {
+    const filterMenu = event.target.closest(".filter-menu");
+    const filterBtn = event.target.closest(".filter-btn");
+
+    document.querySelectorAll(".filter-menu").forEach(menu => {
+        if (menu !== filterMenu) {
+            menu.classList.remove("open");
+        }
+    });
+
+    if (filterBtn && filterMenu) {
+        event.stopPropagation();
+        filterMenu.classList.toggle("open");
+    }
+});
+
 function fillSelects() {
     UI_STYLES.forEach(style => {
         const option = document.createElement("option");
