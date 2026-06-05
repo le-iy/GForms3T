@@ -47,7 +47,7 @@ const GED0031 = {
                     repositories: [
                         {
                             title: "Summative 1 Canvas PDF",
-                            link: "File_Bank/GED0031/S1.pdf"
+                            link: "File_Bank/GED0031/SA1.pdf"
                         }
                     ]
                 }
