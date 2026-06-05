@@ -153,17 +153,27 @@ function sortOtherLinks(links) {
     const sorted = [...links];
 
     if (otherSortMode === "az") {
-        sorted.sort((a, b) =>
-            (a.description || a.title)
-                .localeCompare(b.description || b.title)
-        );
+        sorted.sort((a, b) => {
+            const titleCompare = (a.title || "").localeCompare(b.title || "");
+
+            if (titleCompare !== 0) {
+                return titleCompare;
+            }
+
+            return (a.description || "").localeCompare(b.description || "");
+        });
     }
 
     if (otherSortMode === "za") {
-        sorted.sort((a, b) =>
-            (b.description || b.title)
-                .localeCompare(a.description || a.title)
-        );
+        sorted.sort((a, b) => {
+            const titleCompare = (b.title || "").localeCompare(a.title || "");
+
+            if (titleCompare !== 0) {
+                return titleCompare;
+            }
+
+            return (b.description || "").localeCompare(a.description || "");
+        });
     }
 
     return sorted;
