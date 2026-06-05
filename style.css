@@ -645,6 +645,11 @@ body[data-style="retroos"] .row-title {
     text-align: left;
 }
 
+.other-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
 body[data-style="neoskeuo"] .other-row {
     box-shadow:
         5px 5px 0 rgba(0, 0, 0, 0.22),
