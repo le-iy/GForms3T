@@ -24,7 +24,32 @@ const GED0031 = {
                     title: "Formative 3",
                     description: "Module 3 formative quiz.",
                     link: "https://forms.cloud.microsoft/r/zPpmb64nLH",
-                    collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUOUQ2VDJSMTMxU1lXUkRDNEtFNEQ2MVczNi4u&Token=b2359b85f81f43e7822d77a4f070e176"
+                    collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUOUQ2VDJSMTMxU1lXUkRDNEtFNEQ2MVczNi4u&Token=b2359b85f81f43e7822d77a4f070e176",
+                    repositories: [
+                        {
+                            title: "FA3 1",
+                            link: "File_Bank/GED0031/FA3.pdf"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            name: "Summative",
+            icon: "📝",
+            description: "Canvas-based: Summative assessments.",
+            items: [
+                {
+                    title: "Summative 1",
+                    description: "Module 1-3 summative quiz.",
+                    link: "https://forms.cloud.microsoft/r/rH8J3ESgTS",
+                    collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUNU03Q1NZVkpHVFNKNjNXOERWQkI2U1NXNC4u&Token=752a2be389854816abe0cd6fbe93db1a",
+                    repositories: [
+                        {
+                            title: "Summative 1 Canvas PDF",
+                            link: "File_Bank/GED0031/S1.pdf"
+                        }
+                    ]
                 }
             ]
         },
