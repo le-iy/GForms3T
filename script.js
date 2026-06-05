@@ -9,6 +9,7 @@ const paletteSelect = document.getElementById("paletteSelect");
 const savedStyle = localStorage.getItem("formsCentralStyle") || "neoskeuo";
 const savedPalette = localStorage.getItem("formsCentralPalette") || "gray";
 const savedMode = localStorage.getItem("formsDashboardLinkMode") || "practice";
+const savedOtherSort = localStorage.getItem("formsCentralOtherSort") || "az";
 
 let currentView = "home";
 let selectedSubject = null;
@@ -16,6 +17,7 @@ let selectedCategory = null;
 let currentCategoryParent = null;
 let categoryTrail = [];
 let linkMode = savedMode;
+let otherSortMode = savedOtherSort;
 
 function fillSelects() {
     UI_STYLES.forEach(style => {
@@ -69,7 +71,6 @@ function checkPassword(section) {
     const enteredPassword = prompt(`Enter password for ${section.name}:`);
 
     if (enteredPassword === null) return false;
-
     if (enteredPassword === section.password) return true;
 
     alert("Wrong password.");
@@ -148,6 +149,89 @@ function countItems(category) {
     return itemCount === 1 ? "1 link" : `${itemCount} links`;
 }
 
+function sortOtherLinks(links) {
+    const sorted = [...links];
+
+    if (otherSortMode === "az") {
+        sorted.sort((a, b) => a.title.localeCompare(b.title));
+    }
+
+    if (otherSortMode === "za") {
+        sorted.sort((a, b) => b.title.localeCompare(a.title));
+    }
+
+    if (otherSortMode === "newest") {
+        sorted.sort((a, b) => new Date(b.date) - new Date(a.date));
+    }
+
+    if (otherSortMode === "oldest") {
+        sorted.sort((a, b) => new Date(a.date) - new Date(b.date));
+    }
+
+    if (otherSortMode === "type") {
+        sorted.sort((a, b) => a.type.localeCompare(b.type));
+    }
+
+    return sorted;
+}
+
+function renderOthersSection() {
+    if (!otherLinks || otherLinks.length === 0) return;
+
+    const section = document.createElement("div");
+    section.className = "others-section";
+
+    const header = document.createElement("div");
+    header.className = "others-header";
+
+    header.innerHTML = `
+        <h2>Others</h2>
+        <select id="otherSortSelect" class="other-sort-select"></select>
+    `;
+
+    section.appendChild(header);
+
+    const othersGrid = document.createElement("div");
+    othersGrid.className = "others-grid";
+
+    sortOtherLinks(otherLinks).forEach(item => {
+        const card = document.createElement("button");
+        card.className = "other-row";
+        card.type = "button";
+
+        card.innerHTML = `
+            <span class="row-title">${item.title}</span>
+            <span class="row-meta">${item.type || ""}</span>
+        `;
+
+        card.addEventListener("click", () => {
+            window.open(item.link, "_blank", "noopener,noreferrer");
+        });
+
+        othersGrid.appendChild(card);
+    });
+
+    section.appendChild(othersGrid);
+    cardContainer.appendChild(section);
+
+    const otherSortSelect = document.getElementById("otherSortSelect");
+
+    OTHER_SORTS.forEach(sort => {
+        const option = document.createElement("option");
+        option.value = sort.id;
+        option.textContent = sort.name;
+        otherSortSelect.appendChild(option);
+    });
+
+    otherSortSelect.value = otherSortMode;
+
+    otherSortSelect.addEventListener("change", () => {
+        otherSortMode = otherSortSelect.value;
+        localStorage.setItem("formsCentralOtherSort", otherSortMode);
+        renderHome();
+    });
+}
+
 function renderHome() {
     currentView = "home";
     selectedSubject = null;
@@ -176,6 +260,8 @@ function renderHome() {
 
         cardContainer.appendChild(row);
     });
+
+    renderOthersSection();
 }
 
 function renderCategories(parent, trail = []) {
