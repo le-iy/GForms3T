@@ -18,6 +18,12 @@ const GED0081 = {
                             description: "Lecture formative quiz.",
                             link: "https://forms.cloud.microsoft/r/xSTHYiVjV0",
                             collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUQ01EQkNQNjgxT1g5SkE1SE5ETDNIOU1QTy4u&Token=3ef439a4dcce4f06b52337c84014edd1"
+                        },
+                        {
+                            title: "Formative 2",
+                            description: "Lecture formative quiz.",
+                            link: "https://forms.cloud.microsoft/r/mbbx3nxUbX",
+                            collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUQjAzMDJFMkZGNE5BNDhZMFNBMEpPNkxOVS4u&Token=3880d57382644499819106d57152e4a4"
                         }
                     ]
                 }
