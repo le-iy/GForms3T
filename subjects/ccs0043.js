@@ -33,6 +33,26 @@ const CCS0043 = {
                     collabLink: "https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EGVakDeiDU9BujlyMTLO6NpUMUVWRFlBNzQ1SVZYWjdCQjROSzhINVBGRi4u&Token=5a9e4714c003472b8ac42d288af0b949"
                 }
             ]
+        },
+        {
+            name: "MIDTERMS",
+            icon: "🔒",
+            description: "Password required. Private reviewer files.",
+            password: "shushLangFlis",
+            items: [
+                {
+                    title: "Midterm Exam Qs",
+                    description: "Yall shut yo ahh.",
+                    link: "",
+                    collabLink: "",
+                    repositories: [
+                        {
+                            title: "ME Copy 1",
+                            link: "File_Bank/CCS0043/[PRIV] Shush Files AppDev.pdf"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 };
