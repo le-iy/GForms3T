@@ -3,9 +3,11 @@ const breadcrumb = document.getElementById("breadcrumb");
 const backBtn = document.getElementById("backBtn");
 const practiceModeBtn = document.getElementById("practiceModeBtn");
 const editModeBtn = document.getElementById("editModeBtn");
-const themeSelect = document.getElementById("themeSelect");
+const styleSelect = document.getElementById("styleSelect");
+const paletteSelect = document.getElementById("paletteSelect");
 
-const savedTheme = localStorage.getItem("formsDashboardTheme") || "ember";
+const savedStyle = localStorage.getItem("formsCentralStyle") || "neoskeuo";
+const savedPalette = localStorage.getItem("formsCentralPalette") || "gray";
 const savedMode = localStorage.getItem("formsDashboardLinkMode") || "practice";
 
 let currentView = "home";
@@ -15,26 +17,40 @@ let currentCategoryParent = null;
 let categoryTrail = [];
 let linkMode = savedMode;
 
-function applyTheme(themeName) {
-    document.body.setAttribute("data-theme", themeName);
-    localStorage.setItem("formsDashboardTheme", themeName);
+function fillSelects() {
+    UI_STYLES.forEach(style => {
+        const option = document.createElement("option");
+        option.value = style.id;
+        option.textContent = style.name;
+        styleSelect.appendChild(option);
+    });
 
-    if (themeSelect) {
-        themeSelect.value = themeName;
-    }
+    UI_PALETTES.forEach(palette => {
+        const option = document.createElement("option");
+        option.value = palette.id;
+        option.textContent = palette.name;
+        paletteSelect.appendChild(option);
+    });
+}
+
+function applyStyle(styleName) {
+    document.body.setAttribute("data-style", styleName);
+    localStorage.setItem("formsCentralStyle", styleName);
+    styleSelect.value = styleName;
+}
+
+function applyPalette(paletteName) {
+    document.body.setAttribute("data-palette", paletteName);
+    localStorage.setItem("formsCentralPalette", paletteName);
+    paletteSelect.value = paletteName;
 }
 
 function applyMode(mode) {
     linkMode = mode;
     localStorage.setItem("formsDashboardLinkMode", mode);
 
-    if (practiceModeBtn) {
-        practiceModeBtn.classList.toggle("active", mode === "practice");
-    }
-
-    if (editModeBtn) {
-        editModeBtn.classList.toggle("active", mode === "edit");
-    }
+    practiceModeBtn.classList.toggle("active", mode === "practice");
+    editModeBtn.classList.toggle("active", mode === "edit");
 
     updateBreadcrumb();
 
@@ -44,28 +60,17 @@ function applyMode(mode) {
 }
 
 function getModeLabel() {
-    if (linkMode === "edit") {
-        return "Edit Links";
-    }
-
-    return "Practice Links";
+    return linkMode === "edit" ? "Edit Links" : "Practice Links";
 }
 
-/* PASSWORD CHECK */
 function checkPassword(section) {
-    if (!section.password) {
-        return true;
-    }
+    if (!section.password) return true;
 
     const enteredPassword = prompt(`Enter password for ${section.name}:`);
 
-    if (enteredPassword === null) {
-        return false;
-    }
+    if (enteredPassword === null) return false;
 
-    if (enteredPassword === section.password) {
-        return true;
-    }
+    if (enteredPassword === section.password) return true;
 
     alert("Wrong password.");
     return false;
@@ -96,12 +101,9 @@ function updateBreadcrumb() {
 
     addCrumb("Home", () => renderHome(), currentView === "home");
 
-    if (currentView === "home") {
-        return;
-    }
+    if (currentView === "home") return;
 
     addSeparator();
-
     addCrumb(getModeLabel(), () => renderHome(), false);
 
     if (selectedSubject) {
@@ -118,26 +120,17 @@ function updateBreadcrumb() {
         addSeparator();
 
         const trailUpToHere = categoryTrail.slice(0, index + 1);
-        const isCurrentTrail =
-            currentView === "categories" &&
-            index === categoryTrail.length - 1 &&
-            !selectedCategory;
 
         addCrumb(
             category.name,
             () => renderCategories(category, trailUpToHere),
-            isCurrentTrail
+            currentView === "categories" && index === categoryTrail.length - 1
         );
     });
 
     if (selectedCategory) {
         addSeparator();
-
-        addCrumb(
-            selectedCategory.name,
-            () => renderLinks(selectedCategory),
-            currentView === "links"
-        );
+        addCrumb(selectedCategory.name, () => renderLinks(selectedCategory), currentView === "links");
     }
 }
 
@@ -148,36 +141,11 @@ function clearContainer() {
 
 function countItems(category) {
     if (category.categories && category.categories.length > 0) {
-        let totalLinks = 0;
-
-        category.categories.forEach(innerCategory => {
-            if (innerCategory.items) {
-                totalLinks += innerCategory.items.length;
-            }
-        });
-
-        if (totalLinks === 0) {
-            if (category.categories.length === 1) {
-                return "1 category";
-            }
-
-            return `${category.categories.length} categories`;
-        }
-
-        if (totalLinks === 1) {
-            return "1 link";
-        }
-
-        return `${totalLinks} links`;
+        return `${category.categories.length} categories`;
     }
 
     const itemCount = category.items ? category.items.length : 0;
-
-    if (itemCount === 1) {
-        return "1 link";
-    }
-
-    return `${itemCount} links`;
+    return itemCount === 1 ? "1 link" : `${itemCount} links`;
 }
 
 function renderHome() {
@@ -232,17 +200,13 @@ function renderCategories(parent, trail = []) {
         row.className = category.password ? "category-row private-row" : "category-row";
         row.type = "button";
 
-        const lockIcon = category.password ? " 🔒" : "";
-
         row.innerHTML = `
-            <span class="row-title">${category.name}${lockIcon}</span>
+            <span class="row-title">${category.name}${category.password ? " 🔒" : ""}</span>
             <span class="row-meta">${countItems(category)}</span>
         `;
 
         row.addEventListener("click", () => {
-            if (!checkPassword(category)) {
-                return;
-            }
+            if (!checkPassword(category)) return;
 
             if (category.categories && category.categories.length > 0) {
                 renderCategories(category, [...categoryTrail, category]);
@@ -291,10 +255,8 @@ function renderLinks(category) {
             });
         }
 
-        const sourcesWrap = createSourcesBlock(item, index);
-
         rowWrap.appendChild(linkMain);
-        rowWrap.appendChild(sourcesWrap);
+        rowWrap.appendChild(createSourcesBlock(item, index));
 
         cardContainer.appendChild(rowWrap);
     });
@@ -312,7 +274,7 @@ function createSourcesBlock(item, index) {
 
     sourceBtn.innerHTML = `
         <span class="source-label">Sources</span>
-        <span class="source-arrow">⬇️</span>
+        <span class="source-arrow">⌄</span>
     `;
 
     const sourceMenu = document.createElement("div");
@@ -338,9 +300,7 @@ function createSourcesBlock(item, index) {
         event.stopPropagation();
 
         document.querySelectorAll(".source-menu").forEach(menu => {
-            if (menu !== sourceMenu) {
-                menu.classList.remove("show");
-            }
+            if (menu !== sourceMenu) menu.classList.remove("show");
         });
 
         sourceMenu.classList.toggle("show");
@@ -361,12 +321,7 @@ function goBack() {
     if (currentView === "categories") {
         if (categoryTrail.length > 0) {
             const newTrail = categoryTrail.slice(0, -1);
-
-            const newParent =
-                newTrail.length > 0
-                    ? newTrail[newTrail.length - 1]
-                    : selectedSubject;
-
+            const newParent = newTrail.length > 0 ? newTrail[newTrail.length - 1] : selectedSubject;
             renderCategories(newParent, newTrail);
             return;
         }
@@ -383,28 +338,14 @@ document.addEventListener("click", event => {
     }
 });
 
-if (themeSelect) {
-    themeSelect.addEventListener("change", () => {
-        applyTheme(themeSelect.value);
-    });
-}
+styleSelect.addEventListener("change", () => applyStyle(styleSelect.value));
+paletteSelect.addEventListener("change", () => applyPalette(paletteSelect.value));
+practiceModeBtn.addEventListener("click", () => applyMode("practice"));
+editModeBtn.addEventListener("click", () => applyMode("edit"));
+backBtn.addEventListener("click", goBack);
 
-if (practiceModeBtn) {
-    practiceModeBtn.addEventListener("click", () => {
-        applyMode("practice");
-    });
-}
-
-if (editModeBtn) {
-    editModeBtn.addEventListener("click", () => {
-        applyMode("edit");
-    });
-}
-
-if (backBtn) {
-    backBtn.addEventListener("click", goBack);
-}
-
-applyTheme(savedTheme);
+fillSelects();
+applyStyle(savedStyle);
+applyPalette(savedPalette);
 applyMode(savedMode);
 renderHome();
