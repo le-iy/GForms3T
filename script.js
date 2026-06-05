@@ -153,11 +153,17 @@ function sortOtherLinks(links) {
     const sorted = [...links];
 
     if (otherSortMode === "az") {
-        sorted.sort((a, b) => a.title.localeCompare(b.title));
+        sorted.sort((a, b) =>
+            (a.description || a.title)
+                .localeCompare(b.description || b.title)
+        );
     }
 
     if (otherSortMode === "za") {
-        sorted.sort((a, b) => b.title.localeCompare(a.title));
+        sorted.sort((a, b) =>
+            (b.description || b.title)
+                .localeCompare(a.description || a.title)
+        );
     }
 
     return sorted;
