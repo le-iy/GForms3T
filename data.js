@@ -27,9 +27,3 @@ const UI_PALETTES = [
     { id: "lavenderglass", name: "Lavender Glass" },
     { id: "cottonglass", name: "Cotton Glass" }
 ];
-
-const OTHER_SORTS = [
-    { id: "az", name: "A-Z" },
-    { id: "za", name: "Z-A" },
-    { id: "type", name: "Type" }
-];
