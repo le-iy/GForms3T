@@ -46,7 +46,14 @@ const GED0081 = {
                         {
                             title: "Midterm Exam Qs",
                             description: "Yall shut yo ahh.",
-                            link: "File_Bank/GED0081/[PRIV] Shush Files P6 LEC.pdf"
+                            link: "File_Bank/GED0081/[PRIV] Shush Files P6 LEC.pdf",
+                            collabLink: "",
+                            repositories: [
+                                {
+                                    title: "ME Copy 1",
+                                    link: "File_Bank/GED0081/[PRIV] Shush Files P6 LEC.pdf"
+                                }
+                            ]
                         }
                     ]
                 }
