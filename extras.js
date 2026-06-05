@@ -22,5 +22,11 @@ const extraLinks = [
         description: "Formative 1",
         type: "Gizmo",
         link: "https://gizmo.ai/deck/84862778?p=RHKyaHJWPvc&t=1&featureId=2&deckName=Formative+1&deckColour=a3e635&senderName=Nei&numDeckCards=63&senderUserId=12419649"
+    },
+    {
+        title: "IT0203",
+        description: "Formative 2",
+        type: "Gizmo",
+        link: "https://gizmo.ai/deck/84863535?p=i-_-44lUmQ8&t=1&featureId=2&deckName=Formative+2&deckColour=a3e635&senderName=Nei&numDeckCards=75&senderUserId=12419649"
     }
 ];
