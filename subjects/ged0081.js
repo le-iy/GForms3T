@@ -23,7 +23,13 @@ const GED0081 = {
                             title: "Formative 2",
                             description: "Lecture formative quiz.",
                             link: "https://forms.cloud.microsoft/r/mbbx3nxUbX",
-                            collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUQjAzMDJFMkZGNE5BNDhZMFNBMEpPNkxOVS4u&Token=3880d57382644499819106d57152e4a4"
+                            collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUQjAzMDJFMkZGNE5BNDhZMFNBMEpPNkxOVS4u&Token=3880d57382644499819106d57152e4a4",
+                            repositories: [
+                                {
+                                    title: "FA2 Attempt (1)",
+                                    link: "File_Bank/GED0081/P6 LEC FA2 (1).pdf"
+                                }
+                            ]
                         }
                     ]
                 }
