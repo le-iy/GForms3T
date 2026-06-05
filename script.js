@@ -51,6 +51,26 @@ function getModeLabel() {
     return "Practice Links";
 }
 
+/* PASSWORD CHECK */
+function checkPassword(section) {
+    if (!section.password) {
+        return true;
+    }
+
+    const enteredPassword = prompt(`Enter password for ${section.name}:`);
+
+    if (enteredPassword === null) {
+        return false;
+    }
+
+    if (enteredPassword === section.password) {
+        return true;
+    }
+
+    alert("Wrong password.");
+    return false;
+}
+
 function updateBreadcrumb() {
     breadcrumb.innerHTML = "";
 
@@ -212,12 +232,18 @@ function renderCategories(parent, trail = []) {
         row.className = "category-row";
         row.type = "button";
 
+        const lockIcon = category.password ? " 🔒" : "";
+
         row.innerHTML = `
-            <span class="row-title">${category.name}</span>
+            <span class="row-title">${category.name}${lockIcon}</span>
             <span class="row-meta">${countItems(category)}</span>
         `;
 
         row.addEventListener("click", () => {
+            if (!checkPassword(category)) {
+                return;
+            }
+
             if (category.categories && category.categories.length > 0) {
                 renderCategories(category, [...categoryTrail, category]);
             } else {
