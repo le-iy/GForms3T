@@ -597,8 +597,9 @@ body[data-style="retroos"] .row-title {
 }
 
 .others-header h2 {
-    font-size: 26px;
-    font-weight: 900;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1;
 }
 
 .other-sort-select {
