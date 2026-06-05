@@ -41,7 +41,7 @@ const GED0081 = {
                     name: "MIDTERMS",
                     icon: "🔒",
                     description: "Password required. Private reviewer files.",
-                    password: "saanMoNakuhaAccessHuh?",
+                    password: "shushLangFlis",
                     items: [
                         {
                             title: "Midterm Exam Qs",
@@ -169,6 +169,26 @@ const GED0081 = {
                                 {
                                     title: "Module 5 Source PDF",
                                     link: "File_Bank/GED0081/Activity Lab 5.pdf"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    name: "MIDTERMS",
+                    icon: "🔒",
+                    description: "Password required. Private reviewer files.",
+                    password: "shushLangFlis",
+                    items: [
+                        {
+                            title: "Midterm Exam Qs",
+                            description: "Yall shut yo ahh.",
+                            link: "",
+                            collabLink: "",
+                            repositories: [
+                                {
+                                    title: "ME Copy 1",
+                                    link: "File_Bank/GED0081/[PRIV] Shush Files P6 LAB.pdf"
                                 }
                             ]
                         }
