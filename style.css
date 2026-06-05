@@ -529,6 +529,48 @@ h1 {
     z-index: 1;
 }
 
+/* PRIVATE / PASSWORD-PROTECTED CARDS */
+.private-row {
+    background:
+        linear-gradient(135deg, rgba(26, 27, 31, 0.96), rgba(52, 56, 66, 0.94));
+    border-color: var(--accent-1);
+    color: #f7f7f7;
+    box-shadow:
+        0 0 0 1px var(--accent-1),
+        0 14px 26px var(--shadow-soft);
+}
+
+.private-row::before {
+    height: 6px;
+    background: linear-gradient(
+        90deg,
+        var(--accent-1),
+        var(--accent-2),
+        var(--accent-3)
+    );
+}
+
+.private-row .row-title,
+.private-row .row-meta {
+    color: #f7f7f7;
+}
+
+.private-row .row-title {
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.private-row .row-meta {
+    opacity: 0.9;
+}
+
+.private-row:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 0 0 2px var(--accent-1),
+        0 18px 34px var(--shadow);
+}
+
 /* LINK ROWS */
 .link-row-wrap {
     display: grid;
