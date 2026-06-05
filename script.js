@@ -176,6 +176,24 @@ function sortOtherLinks(links) {
         });
     }
 
+    if (otherSortMode === "type") {
+        sorted.sort((a, b) => {
+
+            const typeCompare = (a.type || "").localeCompare(b.type || "");
+
+            if (typeCompare !== 0) {
+                return typeCompare;
+            }
+
+            const titleCompare = (a.title || "").localeCompare(b.title || "");
+
+            if (titleCompare !== 0) {
+                return titleCompare;
+            }
+
+            return (a.description || "").localeCompare(b.description || "");
+        });
+    }
     return sorted;
 }
 
