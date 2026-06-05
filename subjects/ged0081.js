@@ -28,6 +28,10 @@ const GED0081 = {
                                 {
                                     title: "FA2 (1)",
                                     link: "File_Bank/GED0081/P6 LEC FA2 (1).pdf"
+                                },
+                                {
+                                    title: "FA2 (2)",
+                                    link: "File_Bank/GED0081/P6 LEC FA2 (2).pdf"
                                 }
                             ]
                         }
