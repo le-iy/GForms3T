@@ -36,6 +36,19 @@ const GED0081 = {
                             ]
                         }
                     ]
+                },
+                {
+                    name: "MIDTERMS",
+                    icon: "🔒",
+                    description: "Password required. Private reviewer files.",
+                    password: "samplePass",
+                    items: [
+                        {
+                            title: "Midterm Exam Qs",
+                            description: "Yall shut yo ahh.",
+                            link: "File_Bank/GED0081/LEC/[PRIV] Shush Files P6 LEC.pdf"
+                        }
+                    ]
                 }
             ]
         },
