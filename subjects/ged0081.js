@@ -46,8 +46,8 @@ const GED0081 = {
                         {
                             title: "Midterm Exam Qs",
                             description: "Yall shut yo ahh.",
-                            link: "File_Bank/GED0081/[PRIV] Shush Files P6 LEC.pdf",
-                            collabLink: "",
+                            link: "https://forms.cloud.microsoft/r/Bm7EbviANL",
+                            collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxURUxXWkMySTA1WUw0NTlLU05ZRk02WFRVMC4u&Token=a2f9e096fefb45c59cd1963a73ae39e4",
                             repositories: [
                                 {
                                     title: "ME Copy 1",
