@@ -22,10 +22,10 @@ const UI_PALETTES = [
     { id: "blue", name: "Blue" },
     { id: "mono", name: "Mono" },
 
-    { id: "peachglass", name: "🍑 Peach Glass" },
-    { id: "sunsetglass", name: "🌅 Sunset Glass" },
-    { id: "lavenderglass", name: "🪻 Lavender Glass" },
-    { id: "cottonglass", name: "🩷 Cotton Glass" }
+    { id: "peachglass", name: "Peach Glass" },
+    { id: "sunsetglass", name: "Sunset Glass" },
+    { id: "lavenderglass", name: "Lavender Glass" },
+    { id: "cottonglass", name: "Cotton Glass" }
 ];
 
 const OTHER_SORTS = [
