@@ -160,18 +160,6 @@ function sortOtherLinks(links) {
         sorted.sort((a, b) => b.title.localeCompare(a.title));
     }
 
-    if (otherSortMode === "newest") {
-        sorted.sort((a, b) => new Date(b.date) - new Date(a.date));
-    }
-
-    if (otherSortMode === "oldest") {
-        sorted.sort((a, b) => new Date(a.date) - new Date(b.date));
-    }
-
-    if (otherSortMode === "type") {
-        sorted.sort((a, b) => a.type.localeCompare(b.type));
-    }
-
     return sorted;
 }
 
