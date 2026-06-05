@@ -30,8 +30,5 @@ const UI_PALETTES = [
 
 const OTHER_SORTS = [
     { id: "az", name: "A-Z" },
-    { id: "za", name: "Z-A" },
-    { id: "newest", name: "Newest" },
-    { id: "oldest", name: "Oldest" },
-    { id: "type", name: "Type" }
+    { id: "za", name: "Z-A" }
 ];
