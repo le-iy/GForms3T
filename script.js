@@ -229,7 +229,7 @@ function renderCategories(parent, trail = []) {
 
     parent.categories.forEach(category => {
         const row = document.createElement("button");
-        row.className = "category-row";
+        row.className = category.password ? "category-row private-row" : "category-row";
         row.type = "button";
 
         const lockIcon = category.password ? " 🔒" : "";
@@ -274,7 +274,7 @@ function renderLinks(category) {
         const rowWrap = document.createElement("div");
         rowWrap.className = "link-row-wrap";
 
-        const selectedUrl = linkMode === "edit" ? item.collabLink : item.link;
+        const selectedUrl = linkMode === "edit" ? (item.collabLink || item.link) : item.link;
         const openText = linkMode === "edit" ? "Open Edit Link" : "Open Link";
 
         const linkMain = document.createElement("div");
