@@ -696,7 +696,24 @@ body[data-style="retroos"] .row-title {
 
 .type-submenu {
     top: -2px;
-    right: calc(100% + 2px);
+    right: 100%;
+}
+
+.filter-dropdown {
+    padding: 4px 0;
+}
+
+.filter-type-group {
+    position: relative;
+}
+
+.filter-type-group::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 12px;
+    height: 100%;
 }
 
 .filter-menu:hover .filter-dropdown,
