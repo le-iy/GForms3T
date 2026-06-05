@@ -6,6 +6,8 @@ const subjects = [
     CCS0043
 ];
 
+const otherLinks = typeof extraLinks !== "undefined" ? extraLinks : [];
+
 const UI_STYLES = [
     { id: "neoskeuo", name: "Neo Skeuo" },
     { id: "modern", name: "Modern" },
@@ -20,4 +22,12 @@ const UI_PALETTES = [
     { id: "blue", name: "Blue" },
     { id: "pink", name: "Pink" },
     { id: "mono", name: "Mono" }
+];
+
+const OTHER_SORTS = [
+    { id: "az", name: "A-Z" },
+    { id: "za", name: "Z-A" },
+    { id: "newest", name: "Newest" },
+    { id: "oldest", name: "Oldest" },
+    { id: "type", name: "Type" }
 ];
