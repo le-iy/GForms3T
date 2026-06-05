@@ -41,7 +41,7 @@ const GED0081 = {
                     name: "MIDTERMS",
                     icon: "🔒",
                     description: "Password required. Private reviewer files.",
-                    password: "samplePass",
+                    password: "saanMoNakuhaAccessHuh?",
                     items: [
                         {
                             title: "Midterm Exam Qs",
