@@ -28,5 +28,12 @@ const extraLinks = [
         description: "Formative 2",
         type: "Gizmo",
         link: "https://gizmo.ai/deck/84863535?p=i-_-44lUmQ8&t=1&featureId=2&deckName=Formative+2&deckColour=a3e635&senderName=Nei&numDeckCards=75&senderUserId=12419649"
+    },
+    {
+        title: "GED0081L",
+        description: "Midterm Exam Prep",
+        password: "shushLangFlis",
+        type: "Gizmo",
+        link: "https://gizmo.ai/deck/85179547?p=ySejUCT6Fzg&t=1&featureId=2&deckName=MIDTERMS&deckColour=000000&senderName=Nei&numDeckCards=30&senderUserId=12419649"
     }
 ];
