@@ -151,8 +151,8 @@ const GED0081 = {
                         {
                             title: "Module 2",
                             description: "Module 2 activity reviewer.",
-                            link: "",
-                            collabLink: "",
+                            link: "https://forms.cloud.microsoft/r/d6GbGnMQyq",
+                            collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUNDIxMkRFNFBOUFZaVkxPTkRXVEYyU05HUy4u&Token=371a32e349684cb9959c63514352e485",
                             repositories: [
                                 {
                                     title: "Module 2 Source PDF",
