@@ -161,6 +161,10 @@ const GED0081 = {
                                 {
                                     title: "Lab Act Module 2 Source PDF",
                                     link: "File_Bank/GED0081/Activity Lab 2.pdf"
+                                },
+                                {
+                                    title: "Clean Lab Activity Module 2 PDF",
+                                    link: "File_Bank/GED0081/P6 Lab 2 Module.pdf"
                                 }
                             ]
                         },
