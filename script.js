@@ -86,7 +86,8 @@ function getModeLabel() {
 function checkPassword(section) {
     if (!section.password) return true;
 
-    const enteredPassword = prompt(`Enter password for ${section.name}:`);
+    const sectionLabel = section.name || section.description || section.title || "this link";
+    const enteredPassword = prompt(`Enter password for ${sectionLabel}:`);
 
     if (enteredPassword === null) return false;
     if (enteredPassword === section.password) return true;
@@ -320,6 +321,8 @@ function renderOthersSection() {
         `;
 
         card.addEventListener("click", () => {
+            if (!checkPassword(item)) return;
+
             window.open(item.link, "_blank", "noopener,noreferrer");
         });
 
