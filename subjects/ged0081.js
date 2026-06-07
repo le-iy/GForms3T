@@ -143,8 +143,12 @@ const GED0081 = {
                             collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUOFRaQVNSN1NUR1hFWDRDWVJSVEpNQjhCRS4u&Token=aa4e871a5e7349fc91dd6c081df68b29",
                             repositories: [
                                 {
-                                    title: "Module 1 Source PDF",
+                                    title: "Lab Act Module 1 Source PDF",
                                     link: "File_Bank/GED0081/Activity Lab 1.pdf"
+                                },
+                                {
+                                    title: "Clean Lab Activity Module 1 PDF",
+                                    link: "File_Bank/GED0081/P6 Lab 1 Module.pdf"
                                 }
                             ]
                         },
@@ -155,7 +159,7 @@ const GED0081 = {
                             collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUNDIxMkRFNFBOUFZaVkxPTkRXVEYyU05HUy4u&Token=371a32e349684cb9959c63514352e485",
                             repositories: [
                                 {
-                                    title: "Module 2 Source PDF",
+                                    title: "Lab Act Module 2 Source PDF",
                                     link: "File_Bank/GED0081/Activity Lab 2.pdf"
                                 }
                             ]
@@ -167,7 +171,7 @@ const GED0081 = {
                             collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUNURQTDg2N0dGOEVDU01VVzFIOVA4REdMMi4u&Token=165988a5cf3e4e3785825649b362b512",
                             repositories: [
                                 {
-                                    title: "Module 3 Source PDF",
+                                    title: "Lab Act Module 3 Source PDF",
                                     link: "File_Bank/GED0081/Activity Lab 3.pdf"
                                 }
                             ]
@@ -179,7 +183,7 @@ const GED0081 = {
                             collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUNEgyQloyVkNFVlJPWlFFNzNRUjJJVllZSy4u&Token=8928765b897f45b1a885084102444c47",
                             repositories: [
                                 {
-                                    title: "Module 4 Source PDF",
+                                    title: "Lab Act Module 4 Source PDF",
                                     link: "File_Bank/GED0081/Activity Lab 4.pdf"
                                 }
                             ]
@@ -191,7 +195,7 @@ const GED0081 = {
                             collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxURDZQRU1aTVhSV0NMNU1NVTk0NFZUM0hQRC4u&Token=157a9bea50584eed94c3aab7ac3b6c09",
                             repositories: [
                                 {
-                                    title: "Module 5 Source PDF",
+                                    title: "Lab Act Module 5 Source PDF",
                                     link: "File_Bank/GED0081/Activity Lab 5.pdf"
                                 }
                             ]
