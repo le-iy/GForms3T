@@ -65,7 +65,7 @@ const GED0081 = {
             description: "Laboratory quizzes and module activity reviewers.",
             categories: [
                 {
-                    name: "Short Quizzes (Laboratory)",
+                    name: "Short Quizzes (Laboratory Graded Quizzes)",
                     icon: "🧪",
                     description: "...",
                     items: [
@@ -132,10 +132,34 @@ const GED0081 = {
                     ]
                 },
                 {
-                    name: "Module Activity Practice Reviewers",
+                    name: "Module Activity (Practice Reviewers)",
                     icon: "🔬",
                     description: "Module activity-based practice questions.",
                     items: [
+                        {
+                            title: "Module 1",
+                            description: "Module 1 activity reviewer.",
+                            link: "https://forms.cloud.microsoft/r/LQruSA0sCD",
+                            collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUOFRaQVNSN1NUR1hFWDRDWVJSVEpNQjhCRS4u&Token=aa4e871a5e7349fc91dd6c081df68b29",
+                            repositories: [
+                                {
+                                    title: "Module 1 Source PDF",
+                                    link: "File_Bank/GED0081/Activity Lab 1.pdf"
+                                }
+                            ]
+                        },
+                        {
+                            title: "Module 2",
+                            description: "Module 2 activity reviewer.",
+                            link: "",
+                            collabLink: "",
+                            repositories: [
+                                {
+                                    title: "Module 2 Source PDF",
+                                    link: "File_Bank/GED0081/Activity Lab 2.pdf"
+                                }
+                            ]
+                        },
                         {
                             title: "Module 3",
                             description: "Module 3 activity reviewer.",
