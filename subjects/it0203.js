@@ -39,6 +39,22 @@ const IT0203 = {
                             link: "File_Bank/IT0203/Module 4 - Data Acquisition and Duplication - Defeating Anti-Forensic Techniques (Revised) (1).pdf"
                         }
                     ]
+                },
+                {
+                    title: "Formative 3",
+                    description: "Digital Forensics formative quiz.",
+                    link: "https://forms.cloud.microsoft/r/xNuDk1Hxmx",
+                    collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EAXZJxttnntDsUKyJ6bK5bZUNDROV0U4QVVIRk5OREsxUzZEMk5XMlhUNi4u&Token=313324432122466eb5f7b7daa27d1503",
+                    repositories: [
+                        {
+                            title: "Canvas Module 5",
+                            link: "File_Bank/IT0203/Module 5 - Windows, Linux and Mac Forensics (Revised).pdf"
+                        },
+                        {
+                            title: "Canvas Module 6",
+                            link: "File_Bank/IT0203/Module 6 - Network Forensics.pdf"
+                        }
+                    ]
                 }
             ]
         }
