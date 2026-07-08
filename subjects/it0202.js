@@ -87,6 +87,42 @@ const IT0202 = {
                             link: "File_Bank/IT0202/Netacad M5.pdf"
                         }
                     ]
+                },
+                {
+                    title: "Module 6",
+                    description: "Exploiting Application-Based Vulnerabilities.",
+                    link: "https://forms.cloud.microsoft/r/ZAz3MGj7xN",
+                    collabLink: "https://forms.cloud.microsoft/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EK1ypcd9WIhGl16-VZ5DfUxUMUFOOVM4MEVaUVNIRUlDN0JIRU1SUjNHRi4u&Token=321ca1fba5e0449189ce7cba1dccdb18",
+                    repositories: [
+                        {
+                            title: "Netacad Mod 6 PDF",
+                            link: "File_Bank/IT0202/Netacad M6.pdf"
+                        }
+                    ]
+                },
+                {
+                    title: "Module 7",
+                    description: "Cloud, Mobile, and IoT Security.",
+                    link: "",
+                    collabLink: "",
+                    repositories: [
+                        {
+                            title: "Netacad Mod 7 PDF",
+                            link: "File_Bank/IT0202/Netacad M7.pdf"
+                        }
+                    ]
+                },
+                {
+                    title: "Module 8",
+                    description: "Performing Post-Exploitation Techniques.",
+                    link: "",
+                    collabLink: "",
+                    repositories: [
+                        {
+                            title: "Netacad Mod 8 PDF",
+                            link: "File_Bank/IT0202/Netacad M8.pdf"
+                        }
+                    ]
                 }
             ]
         },
