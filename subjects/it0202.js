@@ -123,6 +123,30 @@ const IT0202 = {
                             link: "File_Bank/IT0202/Netacad M8.pdf"
                         }
                     ]
+                },
+                {
+                    title: "Module 9",
+                    description: "Performing Post-Exploitation Techniques.",
+                    link: "",
+                    collabLink: "",
+                    repositories: [
+                        {
+                            title: "Netacad Mod 9 PDF",
+                            link: "File_Bank/IT0202/Netacad M9.pdf"
+                        }
+                    ]
+                },
+                {
+                    title: "Module 10",
+                    description: "Performing Post-Exploitation Techniques.",
+                    link: "",
+                    collabLink: "",
+                    repositories: [
+                        {
+                            title: "Netacad Mod 10 PDF",
+                            link: "File_Bank/IT0202/Netacad M10.pdf"
+                        }
+                    ]
                 }
             ]
         },
