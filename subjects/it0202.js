@@ -103,8 +103,8 @@ const IT0202 = {
                 {
                     title: "Module 7",
                     description: "Cloud, Mobile, and IoT Security.",
-                    link: "",
-                    collabLink: "",
+                    link: "https://forms.office.com/r/hRpT7vB3jr",
+                    collabLink: "https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EGVakDeiDU9BujlyMTLO6NpUNEJaRjlMRE9XWFdCVVBONEJNSkJGT1QxNC4u&Token=bedf9e95217c4f1d879976453db84fdc",
                     repositories: [
                         {
                             title: "Netacad Mod 7 PDF",
@@ -115,8 +115,8 @@ const IT0202 = {
                 {
                     title: "Module 8",
                     description: "Performing Post-Exploitation Techniques.",
-                    link: "",
-                    collabLink: "",
+                    link: "https://forms.office.com/r/DB66C4pENR",
+                    collabLink: "https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&FormId=2SWgsIjLCESbFc531Hw4EGVakDeiDU9BujlyMTLO6NpUODc4S1BFVVlCN1dHTFRDUDNNQlNWMVUxSy4u&Token=e52eec87e8c74058bf381c70837daa62",
                     repositories: [
                         {
                             title: "Netacad Mod 8 PDF",
